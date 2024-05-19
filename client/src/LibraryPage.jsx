@@ -80,16 +80,13 @@ function LibraryPage() {
 
     const handleAddToLibrary = async (id) => {
         try {
-            await fetch(
-                `https://library-app-api-prod.onrender.com/api/library/${id}`,
-                {
-                    method: 'PATCH',
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                }
-            );
+            await fetch(`http://localhost:3000/api/library/${id}`, {
+                method: 'PATCH',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
         } catch (err) {
             setNoError(false);
         }
@@ -132,14 +129,16 @@ function LibraryPage() {
                             <div>Year: {book.year}</div>
                             <div>Pages: {book.pages}</div>
                         </div>
-                        <button
-                            className='add-button'
-                            onClick={() =>
-                                handleAddToLibrary(book._id)
-                            }
-                        >
-                            Add to my library
-                        </button>
+                        <div className='add-button-container'>
+                            <button
+                                className='add-button'
+                                onClick={() =>
+                                    handleAddToLibrary(book._id)
+                                }
+                            >
+                                Add to my library
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>
