@@ -109,14 +109,14 @@
     text-overflow: ellipsis;
 }
 
-.library-page .remove-button-container {
+.my-books-page .remove-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 
-.library-page .remove-button {
+.my-books-page .remove-button {
     background-color: lightgreen;
     color: black;
 
