@@ -56,12 +56,14 @@ const ForgotPasswordPage = () => {
                             onChange={handleChange}
                             required
                         />
-                        <button
-                            className='forgot-password-button'
-                            type='submit'
-                        >
-                            Send Mail
-                        </button>
+                        <div className='button-flex'>
+                            <button
+                                className='forgot-password-button'
+                                type='submit'
+                            >
+                                Send Mail
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>

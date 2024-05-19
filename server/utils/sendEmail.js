@@ -37,7 +37,7 @@ module.exports = class Email {
             from: this.from,
             to: this.to,
             subject,
-            text: `Reset your password here : http://localhost:${process.env.IT_PORT}/reset-password/${this.resetToken}`,
+            text: `Reset your password here : http://localhost:${process.env.IT_PORT}/user/reset-password/${this.resetToken}`,
         };
 
         // 3) Create a transport and send email

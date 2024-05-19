@@ -71,12 +71,14 @@ function ResetPasswordPage() {
                             required
                         />
                         <Link to='/auth/login'>
-                            <button
-                                className='reset-password-button'
-                                type='submit'
-                            >
-                                Reset Password
-                            </button>
+                            <div className='button-flex'>
+                                <button
+                                    className='reset-password-button'
+                                    type='submit'
+                                >
+                                    Reset Password
+                                </button>
+                            </div>
                         </Link>
                     </form>
                 </div>
