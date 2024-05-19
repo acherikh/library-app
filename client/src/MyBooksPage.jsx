@@ -85,6 +85,7 @@ const MyBooksPage = () => {
                     },
                 }
             );
+            fetchMyBooks();
         } catch (err) {
             setNoError(false);
         }
