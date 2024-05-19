@@ -7,7 +7,14 @@ import './ResetPasswordPage.css';
 function ResetPasswordPage() {
     const params = useParams();
 
-    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/resetPassword/${params.token}`;
+    let URL;
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const BASE_URL = `${URL}/api/user/resetPassword/${params.token}`;
 
     const [formData, setFormData] = useState({
         password: '',

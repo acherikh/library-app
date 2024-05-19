@@ -5,7 +5,14 @@ function UpdateMePage() {
     const params = useParams();
     const navigate = useNavigate();
 
-    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/updateMe`;
+    let URL;
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const BASE_URL = `${URL}/api/user/updateMe`;
 
     const [formData, setFormData] = useState({
         name: '',

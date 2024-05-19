@@ -6,11 +6,11 @@ const Email = require('../utils/sendEmail');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const { promisify } = require('util');
+const process = require('process');
 
 exports.protect = catchAsyncError(async (req, res, next) => {
     // 1) Getting token and check of it's there
     let token;
-    console.log(req.headers);
     if (
         req.headers.authorization &&
         req.headers.authorization.startsWith('Bearer')
@@ -64,7 +64,6 @@ exports.protect = catchAsyncError(async (req, res, next) => {
 
 exports.restricted = (...roles) => {
     return (req, res, next) => {
-        console.log(roles, req.user.role);
         if (!roles.includes(req.user.role)) {
             return next(
                 new AppError(
@@ -87,14 +86,22 @@ const signToken = (id) => {
 const createSendToken = (user, statusCode, req, res) => {
     const token = signToken(user._id);
 
-    res.cookie('jwt', token, {
-        sameSite: 'None',
-        maxAge: 1000 * 60 * 60,
-        httpOnly: true,
-        secure:
-            req.secure ||
-            req.headers['x-forwarded-proto'] === 'https',
-    });
+    if (process.env.NODE_ENV === 'development') {
+        res.cookie('jwt', token, {
+            sameSite: 'None',
+            maxAge: 1000 * 60 * 60,
+            httpOnly: true,
+            secure:
+                req.secure ||
+                req.headers['x-forwarded-proto'] === 'https',
+        });
+    } else {
+        res.cookie('jwt', token, {
+            sameSite: 'Strict',
+            maxAge: 1000 * 60 * 60,
+            httpOnly: true,
+        });
+    }
 
     // Remove password from output
     user.password = undefined;
@@ -174,14 +181,22 @@ exports.isLoggedIn = async (req, res, next) => {
 };
 
 exports.logout = (req, res) => {
-    res.cookie('jwt', 'loggedout', {
-        sameSite: 'None',
-        maxAge: 1000 * 60 * 60,
-        httpOnly: true,
-        secure:
-            req.secure ||
-            req.headers['x-forwarded-proto'] === 'https',
-    });
+    if (process.env.NODE_ENV === 'development') {
+        res.cookie('jwt', token, {
+            sameSite: 'None',
+            maxAge: 1000 * 60 * 60,
+            httpOnly: true,
+            secure:
+                req.secure ||
+                req.headers['x-forwarded-proto'] === 'https',
+        });
+    } else {
+        res.cookie('jwt', token, {
+            sameSite: 'Strict',
+            maxAge: 1000 * 60 * 60,
+            httpOnly: true,
+        });
+    }
     res.status(200).json({ status: 'success' });
 };
 

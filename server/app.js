@@ -23,6 +23,7 @@ app.enable('trust proxy');
 app.use(
     cors({
         origin: [
+            'http://localhost:5173',
             'https://library-app-13rn.onrender.com',
             'https://library-app-dev.onrender.com',
         ],

@@ -11,65 +11,86 @@ const MyBooksPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(10);
 
-    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
+    let URL;
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const BASE_URL = `${URL}/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
 
     const [myBooks, setMyBooks] = useState([]);
     const [fetchingMyBooks, setFetchingMyBooks] = useState(true);
     const [noError, setNoError] = useState(true);
 
-    useEffect(() => {
-        const fetchMyBooks = async () => {
-            try {
-                const response = await fetch(BASE_URL, {
-                    method: 'GET',
-                    credentials: 'include', // <- this is mandatory to deal with cookies
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+    const fetchMyBooks = async () => {
+        try {
+            const response = await fetch(BASE_URL, {
+                method: 'GET',
+                credentials: 'include', // <- this is mandatory to deal with cookies
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
 
-                if (response) {
-                    const data = await response.json();
-                    setMyBooks(data.data.userBooks);
-                    setFetchingMyBooks(false);
-                }
-            } catch (err) {
-                setNoError(false);
+            if (response) {
+                const data = await response.json();
+                setMyBooks(data.data.userBooks);
+                setFetchingMyBooks(false);
             }
-        };
+        } catch (err) {
+            setNoError(false);
+        }
+    };
+    useEffect(() => {
         fetchMyBooks();
     }, []);
 
-    useEffect(() => {
-        const fetchLibrarypage = async () => {
-            try {
-                const response = await fetch(BASE_URL, {
-                    method: 'GET',
-                    credentials: 'include', // <- this is mandatory to deal with cookies
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+    const fetchLibrarypage = async () => {
+        try {
+            const response = await fetch(BASE_URL, {
+                method: 'GET',
+                credentials: 'include', // <- this is mandatory to deal with cookies
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
 
-                if (response) {
-                    const data = await response.json();
-                    setTotalCount(data.results);
-                    setMyBooks(data.data.userBooks);
-                }
-
-                setFetchingMyBooks(false);
-            } catch (err) {
-                setNoError(false);
+            if (response) {
+                const data = await response.json();
+                setTotalCount(data.results);
+                setMyBooks(data.data.userBooks);
             }
-        };
+
+            setFetchingMyBooks(false);
+        } catch (err) {
+            setNoError(false);
+        }
+    };
+    useEffect(() => {
         fetchLibrarypage();
     }, [currentPage, itemsPerPage]);
 
     const totalPages = Math.ceil(totalCount / itemsPerPage);
-
     const handlePreviousPage = () => {
         if (currentPage > 1) {
             setCurrentPage((currentPage) => currentPage - 1);
+        }
+    };
+
+    const handleRemoveFromLibrary = async (id) => {
+        try {
+            await fetch(`${URL}/api/library/${id}`, {
+                method: 'DELETE',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            fetchMyBooks();
+        } catch (err) {
+            setNoError(false);
         }
     };
 
@@ -111,6 +132,16 @@ const MyBooksPage = () => {
                             <div>Genre: {book.genre}</div>
                             <div>Year: {book.year}</div>
                             <div>Pages: {book.pages}</div>
+                        </div>
+                        <div className='remove-button-container'>
+                            <button
+                                className='remove-button'
+                                onClick={() =>
+                                    handleRemoveFromLibrary(book._id)
+                                }
+                            >
+                                Remove from my library
+                            </button>
                         </div>
                     </div>
                 ))}

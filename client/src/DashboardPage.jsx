@@ -2,10 +2,16 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const DashboardPage = () => {
-    const ME_URL =
-        'https://library-app-api-prod.onrender.com/api/user/me';
-    const LOGOUT_URL =
-        'https://library-app-api-prod.onrender.com/api/auth/logout';
+    let URL;
+
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const ME_URL = `${URL}/api/user/me`;
+    const LOGOUT_URL = `${URL}/api/auth/logout`;
 
     const [dashboard, setDashboard] = useState('');
     const [fetchingLogout, setFetchingLogout] = useState(true);
