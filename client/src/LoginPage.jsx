@@ -69,21 +69,23 @@ function LoginPage() {
                             onChange={handleChange}
                             required
                         />
-                        <button
-                            className='signin-button'
-                            type='submit'
-                        >
-                            Sign In
-                        </button>
+                        <div className='forgot-password'>
+                            <Link to='/user/forgot-password'>
+                                <p>Forgot Password ?</p>
+                            </Link>
+                        </div>
+                        <div className='button-flex'>
+                            <button
+                                className='signin-button'
+                                type='submit'
+                            >
+                                Sign In
+                            </button>
+                            <Link to='/auth/signup'>
+                                <p className='signup-text'>Sign Up</p>
+                            </Link>
+                        </div>
                     </form>
-                    <Link className='signup-text' to='/auth/signup'>
-                        <p>Sign Up</p>
-                    </Link>
-                    <Link to='/user/forgot-password'>
-                        <p className='forgot-password-text'>
-                            Forgot Password ?
-                        </p>
-                    </Link>
                 </div>
             </div>
         </div>

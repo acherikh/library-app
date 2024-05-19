@@ -86,16 +86,20 @@ function SignupPage() {
                             onChange={handleChange}
                             required
                         />
-                        <button
-                            className='signup-button'
-                            type='submit'
-                        >
-                            Sign Up
-                        </button>
+                        <div className='button-flex'>
+                            <button
+                                className='signup-button'
+                                type='submit'
+                            >
+                                Sign Up
+                            </button>
+                            <Link to='/auth/login'>
+                                <p className='sign-in-button'>
+                                    Sign In
+                                </p>
+                            </Link>
+                        </div>
                     </form>
-                    <Link to='/auth/login'>
-                        <p>Sign In</p>
-                    </Link>
                 </div>
             </div>
         </div>

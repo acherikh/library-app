@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import './LibraryPage.css';
 import bookPlaceholder from '../img/book-cover-placeholder.png';
@@ -8,7 +7,7 @@ import profilePicture from '../img/profile_pic.jpg';
 function LibraryPage() {
     const [totalCount, setTotalCount] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(10);
+    const [itemsPerPage, setItemsPerPage] = useState(12);
 
     const BASE_URL = `http://localhost:3000/api/library?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
     const COUNT_URL = 'http://localhost:3000/api/library';
@@ -94,25 +93,21 @@ function LibraryPage() {
 
     return (
         <div className='library-page'>
-            <header>
-                <div>
-                    <img src={bookPlaceholder} />
-                </div>
-                <div>
-                    <button onClick={handlePreviousPage}>
-                        Previous Page
-                    </button>
-                </div>
-                <div>
-                    <button onClick={handleNextPage}>
-                        Next Page
-                    </button>
-                </div>
-                <div>
-                    <Link to='/user/my-books'>
-                        <img src={profilePicture} />
-                    </Link>
-                </div>
+            <header className='library-header'>
+                <img
+                    className='library-logo'
+                    src={bookPlaceholder}
+                    onClick={() => window.open('/library', '_self')}
+                />
+                <button onClick={handlePreviousPage}>Previous</button>
+                <button onClick={handleNextPage}>Next</button>
+                <img
+                    className='profile-picture'
+                    src={profilePicture}
+                    onClick={() =>
+                        window.open('/user/my-books', '_self')
+                    }
+                />
             </header>
             <div className='books-container'>
                 {librarypage.map((book) => (
@@ -124,13 +119,17 @@ function LibraryPage() {
                             <div className='book-title'>
                                 <strong>{book.name}</strong>
                             </div>
-                            <div>Author: {book.author}</div>
-                            <div>Genre: {book.genre}</div>
+                            <div className='book-author'>
+                                Author: {book.author}
+                            </div>
+                            <div className='book-genre'>
+                                Genre: {book.genre}
+                            </div>
                             <div>Year: {book.year}</div>
                             <div>Pages: {book.pages}</div>
                         </div>
-
                         <button
+                            className='add-button'
                             onClick={() =>
                                 handleAddToLibrary(book._id)
                             }

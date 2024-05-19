@@ -1,29 +1,17 @@
-/* index.css */
-
-/* CSS Reset - optional but recommended for a fully blank slate */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* HTML and body should take up the full height of the viewport */
 html,
 body {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     font-family: sans-serif;
 }
 
-/* Ensure no default styles are applied to any elements */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-}
-
 #app {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
