@@ -1,7 +1,10 @@
 **/node_modules
 **/.prettierrc
+**/.env
 **/config.env
 **/*.txt
+client/.env
+
 
 # Logs
 **/logs
