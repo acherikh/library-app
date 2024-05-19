@@ -17,56 +17,55 @@ const MyBooksPage = () => {
     const [fetchingMyBooks, setFetchingMyBooks] = useState(true);
     const [noError, setNoError] = useState(true);
 
-    useEffect(() => {
-        const fetchMyBooks = async () => {
-            try {
-                const response = await fetch(BASE_URL, {
-                    method: 'GET',
-                    credentials: 'include', // <- this is mandatory to deal with cookies
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+    const fetchMyBooks = async () => {
+        try {
+            const response = await fetch(BASE_URL, {
+                method: 'GET',
+                credentials: 'include', // <- this is mandatory to deal with cookies
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
 
-                if (response) {
-                    const data = await response.json();
-                    setMyBooks(data.data.userBooks);
-                    setFetchingMyBooks(false);
-                }
-            } catch (err) {
-                setNoError(false);
+            if (response) {
+                const data = await response.json();
+                setMyBooks(data.data.userBooks);
+                setFetchingMyBooks(false);
             }
-        };
+        } catch (err) {
+            setNoError(false);
+        }
+    };
+    useEffect(() => {
         fetchMyBooks();
     }, []);
 
-    useEffect(() => {
-        const fetchLibrarypage = async () => {
-            try {
-                const response = await fetch(BASE_URL, {
-                    method: 'GET',
-                    credentials: 'include', // <- this is mandatory to deal with cookies
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                });
+    const fetchLibrarypage = async () => {
+        try {
+            const response = await fetch(BASE_URL, {
+                method: 'GET',
+                credentials: 'include', // <- this is mandatory to deal with cookies
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
 
-                if (response) {
-                    const data = await response.json();
-                    setTotalCount(data.results);
-                    setMyBooks(data.data.userBooks);
-                }
-
-                setFetchingMyBooks(false);
-            } catch (err) {
-                setNoError(false);
+            if (response) {
+                const data = await response.json();
+                setTotalCount(data.results);
+                setMyBooks(data.data.userBooks);
             }
-        };
+
+            setFetchingMyBooks(false);
+        } catch (err) {
+            setNoError(false);
+        }
+    };
+    useEffect(() => {
         fetchLibrarypage();
     }, [currentPage, itemsPerPage]);
 
     const totalPages = Math.ceil(totalCount / itemsPerPage);
-
     const handlePreviousPage = () => {
         if (currentPage > 1) {
             setCurrentPage((currentPage) => currentPage - 1);
