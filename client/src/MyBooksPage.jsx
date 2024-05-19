@@ -73,6 +73,23 @@ const MyBooksPage = () => {
         }
     };
 
+    const handleRemoveFromLibrary = async (id) => {
+        try {
+            await fetch(
+                `https://library-app-api-prod.onrender.com/api/library/${id}`,
+                {
+                    method: 'DELETE',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
+        } catch (err) {
+            setNoError(false);
+        }
+    };
+
     const handleNextPage = () => {
         if (currentPage < totalPages) {
             setCurrentPage((currentPage) => currentPage + 1);
@@ -111,6 +128,16 @@ const MyBooksPage = () => {
                             <div>Genre: {book.genre}</div>
                             <div>Year: {book.year}</div>
                             <div>Pages: {book.pages}</div>
+                        </div>
+                        <div className='remove-button-container'>
+                            <button
+                                className='remove-button'
+                                onClick={() =>
+                                    handleRemoveFromLibrary(book._id)
+                                }
+                            >
+                                Remove from my library
+                            </button>
                         </div>
                     </div>
                 ))}

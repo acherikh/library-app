@@ -72,7 +72,7 @@
     background-color: white;
     padding-bottom: 150px;
     height: 600px;
-    min-width: 20vw;
+    width: 320px;
 }
 
 .my-books-page .book-thumbnail {
@@ -84,7 +84,8 @@
 .my-books-page .book-infos {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .my-books-page .book-title {
@@ -108,18 +109,23 @@
     text-overflow: ellipsis;
 }
 
-.my-books-page .add-button {
-    background-color: lightgreen;
+.library-page .remove-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
 
+.library-page .remove-button {
+    background-color: lightgreen;
     color: black;
+
     font-size: 18px;
     width: 70%;
 
     border: none;
     border-radius: 20px;
-    padding: 5px 20px;
-    margin-top: 10px;
-    margin-left: 55px;
+    padding: 5px 30px;
 
     cursor: pointer;
 }

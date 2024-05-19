@@ -80,13 +80,16 @@ function LibraryPage() {
 
     const handleAddToLibrary = async (id) => {
         try {
-            await fetch(`http://localhost:3000/api/library/${id}`, {
-                method: 'PATCH',
-                credentials: 'include',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
+            await fetch(
+                `https://library-app-api-prod.onrender.com/api/library/${id}`,
+                {
+                    method: 'PATCH',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
         } catch (err) {
             setNoError(false);
         }
