@@ -5,7 +5,7 @@ function UpdateMePage() {
     const params = useParams();
     const navigate = useNavigate();
 
-    const BASE_URL = `https://library-app-api-dev.onrender.com/api/user/updateMe`;
+    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/updateMe`;
 
     const [formData, setFormData] = useState({
         name: '',

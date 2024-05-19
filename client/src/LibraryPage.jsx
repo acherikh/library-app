@@ -9,9 +9,9 @@ function LibraryPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(12);
 
-    const BASE_URL = `https://library-app-api-dev.onrender.com/api/library?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
+    const BASE_URL = `https://library-app-api-prod.onrender.com/api/library?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
     const COUNT_URL =
-        'https://library-app-api-dev.onrender.com/api/library';
+        'https://library-app-api-prod.onrender.com/api/library';
 
     let [librarypage, setLibrarypage] = useState([]);
     const [fetchingBooks, setFetchingBooks] = useState(true);
@@ -81,7 +81,7 @@ function LibraryPage() {
     const handleAddToLibrary = async (id) => {
         try {
             await fetch(
-                `https://library-app-api-dev.onrender.com/api/library/${id}`,
+                `https://library-app-api-prod.onrender.com/api/library/${id}`,
                 {
                     method: 'PATCH',
                     credentials: 'include',
