@@ -8,8 +8,8 @@ function AuthorPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(1);
 
-    const BASE_URL = `http://localhost:3000/api/library?slugAuthor=${params.authorName}&limit=${itemsPerPage}&page=${currentPage}`;
-    const COUNT_URL = `http://localhost:3000/api/library?slugAuthor=${params.authorName}`;
+    const BASE_URL = `https://library-app-api-dev.onrender.com/api/library?slugAuthor=${params.authorName}&limit=${itemsPerPage}&page=${currentPage}`;
+    const COUNT_URL = `https://library-app-api-dev.onrender.com/api/library?slugAuthor=${params.authorName}`;
 
     let [authorpage, setAuthorpage] = useState([]);
     const [fetchingAuthor, setAuthor] = useState(true);

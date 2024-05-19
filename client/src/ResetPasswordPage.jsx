@@ -7,7 +7,7 @@ import './ResetPasswordPage.css';
 function ResetPasswordPage() {
     const params = useParams();
 
-    const BASE_URL = `http://localhost:3000/api/user/resetPassword/${params.token}`;
+    const BASE_URL = `https://library-app-api-dev.onrender.com/api/user/resetPassword/${params.token}`;
 
     const [formData, setFormData] = useState({
         password: '',
