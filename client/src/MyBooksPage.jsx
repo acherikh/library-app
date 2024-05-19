@@ -67,8 +67,6 @@ const MyBooksPage = () => {
 
     const totalPages = Math.ceil(totalCount / itemsPerPage);
 
-    console.log(totalPages, itemsPerPage, totalCount, currentPage);
-
     const handlePreviousPage = () => {
         if (currentPage > 1) {
             setCurrentPage((currentPage) => currentPage - 1);
@@ -83,25 +81,21 @@ const MyBooksPage = () => {
 
     return (
         <div className='my-books-page'>
-            <header>
-                <div>
-                    <img src={bookPlaceholder} />
-                </div>
-                <div>
-                    <button onClick={handlePreviousPage}>
-                        Previous Page
-                    </button>
-                </div>
-                <div>
-                    <button onClick={handleNextPage}>
-                        Next Page
-                    </button>
-                </div>
-                <div>
-                    <Link to='/user/my-books'>
-                        <img src={profilePicture} />
-                    </Link>
-                </div>
+            <header className='my-books-header'>
+                <img
+                    className='library-logo'
+                    src={bookPlaceholder}
+                    onClick={() => window.open('/library', '_self')}
+                />
+                <button onClick={handlePreviousPage}>Previous</button>
+                <button onClick={handleNextPage}>Next</button>
+                <img
+                    className='profile-picture'
+                    src={profilePicture}
+                    onClick={() =>
+                        window.open('/user/my-books', '_self')
+                    }
+                />
             </header>
             <div className='books-container'>
                 {myBooks.map((book) => (

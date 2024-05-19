@@ -1,110 +1,138 @@
 .my-books-page {
     background-color: lightblue;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .my-books-page header {
     background-color: black;
     height: 70px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100vw;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.my-books-page header img {
-    display: flex;
-    align-items: center;
+.my-books-page img {
     border-radius: 100px;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     cursor: pointer;
 }
 
-.my-books-page header img:hover {
+.my-books-page .my-books-header img:hover {
     box-shadow: 1px 1px 3px white;
 }
 
-.my-books-page header button {
+.my-books-page .my-books-header button {
     background-color: white;
     color: black;
 
     border: none;
     border-radius: 100px;
-    padding: 15px 60px;
+    padding: 10px 10px;
     font-size: 20px;
 
     cursor: pointer;
 }
 
-.my-books-page header button:hover {
+.my-books-page .my-books-header button:hover {
     opacity: 0.8;
 }
 
-.my-books-page header button:active {
+.my-books-page .my-books-header button:active {
     opacity: 0.6;
 }
 
-.books-container {
+.my-books-page .books-container {
+    margin-top: 71px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
 
-.book-box {
+.my-books-page .book-box {
     background-color: white;
-    padding-bottom: 110px;
-    height: 330px;
+    padding-bottom: 150px;
+    height: 600px;
+    min-width: 20vw;
 }
 
-.book-thumbnail {
+.my-books-page .book-thumbnail {
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 100%;
 }
 
-.book-infos {
+.my-books-page .book-infos {
     display: flex;
     flex-direction: column;
-    position: absolute;
     padding-left: 20px;
 }
 
-.book-box button {
-    position: relative;
-    top: 105px;
-    left: 25%;
+.my-books-page .book-title {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.my-books-page .book-author {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.my-books-page .book-genre {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.my-books-page .add-button {
     background-color: lightgreen;
 
-    font-size: 18px;
     color: black;
+    font-size: 18px;
+    width: 70%;
 
     border: none;
     border-radius: 20px;
     padding: 5px 20px;
+    margin-top: 10px;
+    margin-left: 55px;
 
     cursor: pointer;
 }
 
-.book-box button:hover {
+.my-books-page .book-box button:hover {
     opacity: 0.8;
 }
 
-.book-box button:active {
+.my-books-page .book-box button:active {
     opacity: 0.6;
 }
 
-.pagination {
+.my-books-page .pagination {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,7 +141,7 @@
     top: 4%;
 }
 
-.pagination button {
+.my-books-page .pagination button {
     background-color: white;
     color: black;
 
@@ -127,10 +155,22 @@
     cursor: pointer;
 }
 
-.pagination button:hover {
+.my-books-page .pagination button:hover {
     opacity: 0.8;
 }
 
-.pagination button:active {
+.my-books-page .pagination button:active {
     opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .my-books-page .books-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .my-books-page .books-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
