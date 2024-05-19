@@ -9,9 +9,15 @@ function LibraryPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(12);
 
-    const BASE_URL = `https://library-app-api-prod.onrender.com/api/library?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
-    const COUNT_URL =
-        'https://library-app-api-prod.onrender.com/api/library';
+    let URL;
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const BASE_URL = `${URL}/api/library?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
+    const COUNT_URL = `${URL}/api/library`;
 
     let [librarypage, setLibrarypage] = useState([]);
     const [fetchingBooks, setFetchingBooks] = useState(true);
@@ -80,16 +86,13 @@ function LibraryPage() {
 
     const handleAddToLibrary = async (id) => {
         try {
-            await fetch(
-                `https://library-app-api-prod.onrender.com/api/library/${id}`,
-                {
-                    method: 'PATCH',
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                }
-            );
+            await fetch(`${URL}/api/library/${id}`, {
+                method: 'PATCH',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
         } catch (err) {
             setNoError(false);
         }

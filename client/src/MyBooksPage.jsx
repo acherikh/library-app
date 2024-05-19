@@ -11,7 +11,14 @@ const MyBooksPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(10);
 
-    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
+    let URL;
+    if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
+        URL = `${import.meta.env.VITE_PRODUCTION_API_URL}`;
+    } else {
+        URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
+    }
+
+    const BASE_URL = `${URL}/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
 
     const [myBooks, setMyBooks] = useState([]);
     const [fetchingMyBooks, setFetchingMyBooks] = useState(true);
@@ -74,16 +81,13 @@ const MyBooksPage = () => {
 
     const handleRemoveFromLibrary = async (id) => {
         try {
-            await fetch(
-                `https://library-app-api-prod.onrender.com/api/library/${id}`,
-                {
-                    method: 'DELETE',
-                    credentials: 'include',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                }
-            );
+            await fetch(`${URL}/api/library/${id}`, {
+                method: 'DELETE',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
             fetchMyBooks();
         } catch (err) {
             setNoError(false);
