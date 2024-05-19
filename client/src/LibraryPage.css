@@ -1,0 +1,136 @@
+.library-page {
+    background-color: lightblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.library-page header {
+    background-color: black;
+    height: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-page header img {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.library-page header img:hover {
+    box-shadow: 1px 1px 3px white;
+}
+
+.library-page header button {
+    background-color: white;
+    color: black;
+
+    border: none;
+    border-radius: 100px;
+    padding: 15px 60px;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.library-page header button:hover {
+    opacity: 0.8;
+}
+
+.library-page header button:active {
+    opacity: 0.6;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.book-box {
+    background-color: white;
+    padding-bottom: 110px;
+    height: 330px;
+}
+
+.book-thumbnail {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.book-infos {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 20px;
+}
+
+.book-box button {
+    position: relative;
+    top: 105px;
+    left: 25%;
+    background-color: lightgreen;
+
+    font-size: 18px;
+    color: black;
+
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+    cursor: pointer;
+}
+
+.book-box button:hover {
+    opacity: 0.8;
+}
+
+.book-box button:active {
+    opacity: 0.6;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 4%;
+}
+
+.pagination button {
+    background-color: white;
+    color: black;
+
+    margin-top: 7px;
+    padding: 5px 20px;
+
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    opacity: 0.8;
+}
+
+.pagination button:active {
+    opacity: 0.6;
+}

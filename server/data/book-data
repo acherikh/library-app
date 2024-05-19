@@ -1,0 +1,443 @@
+[
+    {
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "pages": 281,
+        "year": 1960,
+        "genre": "Fiction",
+        "slugName": "to-kill-a-mockingbird",
+        "slugAuthor": "harper-lee"
+    },
+    {
+        "name": "1984",
+        "author": "George Orwell",
+        "pages": 328,
+        "year": 1949,
+        "genre": "Dystopian Fiction",
+        "slugName": "1984",
+        "slugAuthor": "george-orwell"
+    },
+    {
+        "name": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "pages": 180,
+        "year": 1925,
+        "genre": "Fiction",
+        "slugName": "the-great-gatsby",
+        "slugAuthor": "f-scott-fitzgerald"
+    },
+    {
+        "name": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "pages": 277,
+        "year": 1951,
+        "genre": "Fiction",
+        "slugName": "the-catcher-in-the-rye",
+        "slugAuthor": "j-d-salinger"
+    },
+    {
+        "name": "To the Lighthouse",
+        "author": "Virginia Woolf",
+        "pages": 209,
+        "year": 1927,
+        "genre": "Modernist Literature",
+        "slugName": "to-the-lighthouse",
+        "slugAuthor": "virginia-woolf"
+    },
+    {
+        "name": "Brave New World",
+        "author": "Aldous Huxley",
+        "pages": 311,
+        "year": 1932,
+        "genre": "Dystopian Fiction",
+        "slugName": "brave-new-world",
+        "slugAuthor": "aldous-huxley"
+    },
+    {
+        "name": "Fahrenheit 451",
+        "author": "Ray Bradbury",
+        "pages": 158,
+        "year": 1953,
+        "genre": "Dystopian Fiction",
+        "slugName": "fahrenheit-451",
+        "slugAuthor": "ray-bradbury"
+    },
+    {
+        "name": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "pages": 279,
+        "year": 1813,
+        "genre": "Romance",
+        "slugName": "pride-and-prejudice",
+        "slugAuthor": "jane-austen"
+    },
+    {
+        "name": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "pages": 310,
+        "year": 1937,
+        "genre": "Fantasy",
+        "slugName": "the-hobbit",
+        "slugAuthor": "j-r-r-tolkien"
+    },
+    {
+        "name": "Moby Dick",
+        "author": "Herman Melville",
+        "pages": 634,
+        "year": 1851,
+        "genre": "Adventure",
+        "slugName": "moby-dick",
+        "slugAuthor": "herman-melville"
+    },
+    {
+        "name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "pages": 1178,
+        "year": 1954,
+        "genre": "Fantasy",
+        "slugName": "the-lord-of-the-rings",
+        "slugAuthor": "j-r-r-tolkien"
+    },
+    {
+        "name": "Jane Eyre",
+        "author": "Charlotte Brontë",
+        "pages": 593,
+        "year": 1847,
+        "genre": "Gothic Fiction",
+        "slugName": "jane-eyre",
+        "slugAuthor": "charlotte-bronte"
+    },
+    {
+        "name": "The Chronicles of Narnia",
+        "author": "C.S. Lewis",
+        "pages": 767,
+        "year": 1950,
+        "genre": "Fantasy",
+        "slugName": "the-chronicles-of-narnia",
+        "slugAuthor": "c-s-lewis"
+    },
+    {
+        "name": "Alice's Adventures in Wonderland",
+        "author": "Lewis Carroll",
+        "pages": 200,
+        "year": 1865,
+        "genre": "Fantasy",
+        "slugName": "alices-adventures-in-wonderland",
+        "slugAuthor": "lewis-carroll"
+    },
+    {
+        "name": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "pages": 254,
+        "year": 1890,
+        "genre": "Gothic Fiction",
+        "slugName": "the-picture-of-dorian-gray",
+        "slugAuthor": "oscar-wilde"
+    },
+    {
+        "name": "The Bell Jar",
+        "author": "Sylvia Plath",
+        "pages": 288,
+        "year": 1963,
+        "genre": "Semi-Autobiographical Fiction",
+        "slugName": "the-bell-jar",
+        "slugAuthor": "sylvia-plath"
+    },
+    {
+        "name": "Lord of the Flies",
+        "author": "William Golding",
+        "pages": 224,
+        "year": 1954,
+        "genre": "Allegorical Novel",
+        "slugName": "lord-of-the-flies",
+        "slugAuthor": "william-golding"
+    },
+    {
+        "name": "Wuthering Heights",
+        "author": "Emily Brontë",
+        "pages": 342,
+        "year": 1847,
+        "genre": "Gothic Fiction",
+        "slugName": "wuthering-heights",
+        "slugAuthor": "emily-bronte"
+    },
+    {
+        "name": "Animal Farm",
+        "author": "George Orwell",
+        "pages": 112,
+        "year": 1945,
+        "genre": "Satire",
+        "slugName": "animal-farm",
+        "slugAuthor": "george-orwell"
+    },
+    {
+        "name": "Gone with the Wind",
+        "author": "Margaret Mitchell",
+        "pages": 1037,
+        "year": 1936,
+        "genre": "Historical Fiction",
+        "slugName": "gone-with-the-wind",
+        "slugAuthor": "margaret-mitchell"
+    },
+    {
+        "name": "Les Misérables",
+        "author": "Victor Hugo",
+        "pages": 1463,
+        "year": 1862,
+        "genre": "Historical Fiction",
+        "slugName": "les-miserables",
+        "slugAuthor": "victor-hugo"
+    },
+    {
+        "name": "The Grapes of Wrath",
+        "author": "John Steinbeck",
+        "pages": 464,
+        "year": 1939,
+        "genre": "Realism",
+        "slugName": "the-grapes-of-wrath",
+        "slugAuthor": "john-steinbeck"
+    },
+    {
+        "name": "Anna Karenina",
+        "author": "Leo Tolstoy",
+        "pages": 964,
+        "year": 1877,
+        "genre": "Realism",
+        "slugName": "anna-karenina",
+        "slugAuthor": "leo-tolstoy"
+    },
+    {
+        "name": "The Adventures of Huckleberry Finn",
+        "author": "Mark Twain",
+        "pages": 366,
+        "year": 1884,
+        "genre": "Adventure",
+        "slugName": "the-adventures-of-huckleberry-finn",
+        "slugAuthor": "mark-twain"
+    },
+    {
+        "name": "War and Peace",
+        "author": "Leo Tolstoy",
+        "pages": 1225,
+        "year": 1869,
+        "genre": "Historical Fiction",
+        "slugName": "war-and-peace",
+        "slugAuthor": "leo-tolstoy"
+    },
+    {
+        "name": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "pages": 551,
+        "year": 1866,
+        "genre": "Philosophical Novel",
+        "slugName": "crime-and-punishment",
+        "slugAuthor": "fyodor-dostoevsky"
+    },
+    {
+        "name": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky",
+        "pages": 796,
+        "year": 1880,
+        "genre": "Philosophical Novel",
+        "slugName": "the-brothers-karamazov",
+        "slugAuthor": "fyodor-dostoevsky"
+    },
+    {
+        "name": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "pages": 417,
+        "year": 1967,
+        "genre": "Magical Realism",
+        "slugName": "one-hundred-years-of-solitude",
+        "slugAuthor": "gabriel-garcia-marquez"
+    },
+    {
+        "name": "The Old Man and the Sea",
+        "author": "Ernest Hemingway",
+        "pages": 127,
+        "year": 1952,
+        "genre": "Adventure",
+        "slugName": "the-old-man-and-the-sea",
+        "slugAuthor": "ernest-hemingway"
+    },
+    {
+        "name": "The Scarlet Letter",
+        "author": "Nathaniel Hawthorne",
+        "pages": 238,
+        "year": 1850,
+        "genre": "Romance",
+        "slugName": "the-scarlet-letter",
+        "slugAuthor": "nathaniel-hawthorne"
+    },
+    {
+        "name": "Frankenstein",
+        "author": "Mary Shelley",
+        "pages": 280,
+        "year": 1818,
+        "genre": "Gothic Fiction",
+        "slugName": "frankenstein",
+        "slugAuthor": "mary-shelley"
+    },
+    {
+        "name": "The Road",
+        "author": "Cormac McCarthy",
+        "pages": 287,
+        "year": 2006,
+        "genre": "Post-apocalyptic Fiction",
+        "slugName": "the-road",
+        "slugAuthor": "cormac-mccarthy"
+    },
+    {
+        "name": "The Handmaid's Tale",
+        "author": "Margaret Atwood",
+        "pages": 311,
+        "year": 1985,
+        "genre": "Dystopian Fiction",
+        "slugName": "the-handmaids-tale",
+        "slugAuthor": "margaret-atwood"
+    },
+    {
+        "name": "Beloved",
+        "author": "Toni Morrison",
+        "pages": 321,
+        "year": 1987,
+        "genre": "Magical Realism",
+        "slugName": "beloved",
+        "slugAuthor": "toni-morrison"
+    },
+    {
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "author": "Douglas Adams",
+        "pages": 193,
+        "year": 1979,
+        "genre": "Science Fiction",
+        "slugName": "the-hitchhikers-guide-to-the-galaxy",
+        "slugAuthor": "douglas-adams"
+    },
+    {
+        "name": "Heart of Darkness",
+        "author": "Joseph Conrad",
+        "pages": 99,
+        "year": 1899,
+        "genre": "Adventure",
+        "slugName": "heart-of-darkness",
+        "slugAuthor": "joseph-conrad"
+    },
+    {
+        "name": "The Shining",
+        "author": "Stephen King",
+        "pages": 447,
+        "year": 1977,
+        "genre": "Horror",
+        "slugName": "the-shining",
+        "slugAuthor": "stephen-king"
+    },
+    {
+        "name": "Slaughterhouse-Five",
+        "author": "Kurt Vonnegut",
+        "pages": 275,
+        "year": 1969,
+        "genre": "Science Fiction",
+        "slugName": "slaughterhouse-five",
+        "slugAuthor": "kurt-vonnegut"
+    },
+    {
+        "name": "Catch-22",
+        "author": "Joseph Heller",
+        "pages": 453,
+        "year": 1961,
+        "genre": "Satire",
+        "slugName": "catch-22",
+        "slugAuthor": "joseph-heller"
+    },
+    {
+        "name": "The Color Purple",
+        "author": "Alice Walker",
+        "pages": 295,
+        "year": 1982,
+        "genre": "Epistolary Novel",
+        "slugName": "the-color-purple",
+        "slugAuthor": "alice-walker"
+    },
+    {
+        "name": "Maus",
+        "author": "Art Spiegelman",
+        "pages": 296,
+        "year": 1986,
+        "genre": "Graphic Novel",
+        "slugName": "maus",
+        "slugAuthor": "art-spiegelman"
+    },
+    {
+        "name": "Persepolis",
+        "author": "Marjane Satrapi",
+        "pages": 343,
+        "year": 2000,
+        "genre": "Graphic Novel",
+        "slugName": "persepolis",
+        "slugAuthor": "marjane-satrapi"
+    },
+    {
+        "name": "The Handmaid's Tale",
+        "author": "Margaret Atwood",
+        "pages": 311,
+        "year": 1985,
+        "genre": "Dystopian Fiction",
+        "slugName": "the-handmaids-tale",
+        "slugAuthor": "margaret-atwood"
+    },
+    {
+        "name": "American Gods",
+        "author": "Neil Gaiman",
+        "pages": 588,
+        "year": 2001,
+        "genre": "Fantasy",
+        "slugName": "american-gods",
+        "slugAuthor": "neil-gaiman"
+    },
+    {
+        "name": "The Secret History",
+        "author": "Donna Tartt",
+        "pages": 559,
+        "year": 1992,
+        "genre": "Mystery",
+        "slugName": "the-secret-history",
+        "slugAuthor": "donna-tartt"
+    },
+    {
+        "name": "The Girl with the Dragon Tattoo",
+        "author": "Stieg Larsson",
+        "pages": 672,
+        "year": 2005,
+        "genre": "Mystery",
+        "slugName": "the-girl-with-the-dragon-tattoo",
+        "slugAuthor": "stieg-larsson"
+    },
+    {
+        "name": "A Game of Thrones",
+        "author": "George R.R. Martin",
+        "pages": 694,
+        "year": 1996,
+        "genre": "Fantasy",
+        "slugName": "a-game-of-thrones",
+        "slugAuthor": "george-r-r-martin"
+    },
+    {
+        "name": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "pages": 374,
+        "year": 2008,
+        "genre": "Dystopian Fiction",
+        "slugName": "the-hunger-games",
+        "slugAuthor": "suzanne-collins"
+    },
+    {
+        "name": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "pages": 454,
+        "year": 2003,
+        "genre": "Mystery",
+        "slugName": "the-da-vinci-code",
+        "slugAuthor": "dan-brown"
+    }
+]
