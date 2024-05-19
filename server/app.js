@@ -20,7 +20,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: true,
+        origin: 'https://library-app-dev.onrender.com',
         credentials: true,
     })
 );
