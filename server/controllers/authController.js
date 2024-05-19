@@ -86,7 +86,7 @@ const signToken = (id) => {
 const createSendToken = (user, statusCode, req, res) => {
     const token = signToken(user._id);
 
-    if (process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV !== 'local') {
         res.cookie('jwt', token, {
             sameSite: 'None',
             maxAge: 1000 * 60 * 60,
@@ -181,7 +181,7 @@ exports.isLoggedIn = async (req, res, next) => {
 };
 
 exports.logout = (req, res) => {
-    if (process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV !== 'local') {
         res.cookie('jwt', token, {
             sameSite: 'None',
             maxAge: 1000 * 60 * 60,
