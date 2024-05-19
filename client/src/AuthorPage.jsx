@@ -8,8 +8,8 @@ function AuthorPage() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(1);
 
-    const BASE_URL = `https://library-app-api-fxmy.onrender.com/api/library?slugAuthor=${params.authorName}&limit=${itemsPerPage}&page=${currentPage}`;
-    const COUNT_URL = `https://library-app-api-fxmy.onrender.com/api/library?slugAuthor=${params.authorName}`;
+    const BASE_URL = `https://library-app-api-prod.onrender.com/api/library?slugAuthor=${params.authorName}&limit=${itemsPerPage}&page=${currentPage}`;
+    const COUNT_URL = `https://library-app-api-prod.onrender.com/api/library?slugAuthor=${params.authorName}`;
 
     let [authorpage, setAuthorpage] = useState([]);
     const [fetchingAuthor, setAuthor] = useState(true);

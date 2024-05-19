@@ -11,7 +11,7 @@ const MyBooksPage = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(10);
 
-    const BASE_URL = `https://library-app-api-fxmy.onrender.com/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
+    const BASE_URL = `https://library-app-api-prod.onrender.com/api/user/myBooks?limit=${itemsPerPage}&page=${currentPage}&sort=name`;
 
     const [myBooks, setMyBooks] = useState([]);
     const [fetchingMyBooks, setFetchingMyBooks] = useState(true);

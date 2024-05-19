@@ -4,7 +4,7 @@ import './ForgotPasswordPage.css';
 
 const ForgotPasswordPage = () => {
     const BASE_URL =
-        'https://library-app-api-fxmy.onrender.com/api/user/forgotPassword';
+        'https://library-app-api-prod.onrender.com/api/user/forgotPassword';
 
     const [formData, setFormData] = useState({
         email: '',

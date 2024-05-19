@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 function BookPage() {
     const params = useParams();
 
-    const BASE_URL = `https://library-app-api-fxmy.onrender.com/api/library?slugName=${params.bookName}`;
+    const BASE_URL = `https://library-app-api-prod.onrender.com/api/library?slugName=${params.bookName}`;
 
     let [bookpage, setBookpage] = useState([]);
     const [fetchingBook, setFetchingBook] = useState(true);

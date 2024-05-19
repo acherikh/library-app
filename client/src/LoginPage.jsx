@@ -6,7 +6,7 @@ import './LoginPage.css';
 
 function LoginPage() {
     const BASE_URL =
-        'https://library-app-api-fxmy.onrender.com/api/auth/login';
+        'https://library-app-api-prod.onrender.com/api/auth/login';
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({
