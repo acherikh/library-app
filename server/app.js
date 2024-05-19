@@ -22,7 +22,10 @@ app.enable('trust proxy');
 
 app.use(
     cors({
-        origin: 'https://library-app-dev.onrender.com',
+        origin: [
+            'https://library-app-13rn.onrender.com',
+            'https://library-app-dev.onrender.com',
+        ],
         credentials: true,
     })
 );
