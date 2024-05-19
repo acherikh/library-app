@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import './SignupPage.css';
 
 function SignupPage() {
-    const BASE_URL =
-        'https://library-app-api-fxmy.onrender.com/api/auth/signup';
+    const BASE_URL = 'http://localhost:3000/api/auth/signup';
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({

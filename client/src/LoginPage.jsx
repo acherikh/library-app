@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
 function LoginPage() {
-    const BASE_URL =
-        'https://library-app-api-fxmy.onrender.com/api/auth/login';
+    const BASE_URL = 'http://localhost:3000/api/auth/login';
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({

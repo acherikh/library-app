@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const DashboardPage = () => {
-    const ME_URL =
-        'https://library-app-api-fxmy.onrender.com/api/user/me';
-    const LOGOUT_URL =
-        'https://library-app-api-fxmy.onrender.com/api/auth/logout';
+    const ME_URL = 'http://localhost:3000/api/user/me';
+    const LOGOUT_URL = 'http://localhost:3000/api/auth/logout';
 
     const [dashboard, setDashboard] = useState('');
     const [fetchingLogout, setFetchingLogout] = useState(true);

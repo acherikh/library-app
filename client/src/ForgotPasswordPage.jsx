@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import './ForgotPasswordPage.css';
 
 const ForgotPasswordPage = () => {
-    const BASE_URL =
-        'https://library-app-api-fxmy.onrender.com/api/user/forgotPassword';
+    const BASE_URL = 'http://localhost:3000/api/user/forgotPassword';
 
     const [formData, setFormData] = useState({
         email: '',

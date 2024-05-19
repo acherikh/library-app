@@ -18,11 +18,9 @@ const authRouter = require('./routes/authRoutes');
 
 const app = express();
 
-app.enable('trust proxy');
-
 app.use(
     cors({
-        origin: 'https://library-app-vuph.onrender.com',
+        origin: true,
         credentials: true,
     })
 );

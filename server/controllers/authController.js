@@ -88,12 +88,12 @@ const createSendToken = (user, statusCode, req, res) => {
     const token = signToken(user._id);
 
     res.cookie('jwt', token, {
-        sameSite: 'None',
+        sameSite: 'Lax',
         maxAge: 1000 * 60 * 60,
         httpOnly: true,
-        secure:
-            req.secure ||
-            req.headers['x-forwarded-proto'] === 'https',
+        // secure:
+        //     req.secure ||
+        //     req.headers['x-forwarded-proto'] === 'https',
     });
 
     // Remove password from output
@@ -176,12 +176,11 @@ exports.isLoggedIn = async (req, res, next) => {
 exports.logout = (req, res) => {
     res.cookie('jwt', 'loggedout', {
         sameSite: 'Lax',
-        signed: true,
         maxAge: 1000 * 60 * 60,
         httpOnly: true,
-        secure:
-            req.secure ||
-            req.headers['x-forwarded-proto'] === 'https',
+        // secure:
+        //     req.secure ||
+        //     req.headers['x-forwarded-proto'] === 'https',
     });
     res.status(200).json({ status: 'success' });
 };

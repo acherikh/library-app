@@ -5,7 +5,7 @@ function UpdateMePage() {
     const params = useParams();
     const navigate = useNavigate();
 
-    const BASE_URL = `https://library-app-api-fxmy.onrender.com/api/user/updateMe`;
+    const BASE_URL = `http://localhost:3000/api/user/updateMe`;
 
     const [formData, setFormData] = useState({
         name: '',
