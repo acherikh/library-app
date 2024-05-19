@@ -89,6 +89,7 @@ const createSendToken = (user, statusCode, req, res) => {
 
     res.cookie('jwt', token, {
         sameSite: 'None',
+        signed: true,
         maxAge: 1000 * 60 * 60,
         httpOnly: true,
         secure:
@@ -175,7 +176,7 @@ exports.isLoggedIn = async (req, res, next) => {
 
 exports.logout = (req, res) => {
     res.cookie('jwt', 'loggedout', {
-        sameSite: 'Lax',
+        sameSite: 'None',
         signed: true,
         maxAge: 1000 * 60 * 60,
         httpOnly: true,
