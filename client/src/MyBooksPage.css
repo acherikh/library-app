@@ -117,11 +117,11 @@
 }
 
 .my-books-page .remove-button {
-    background-color: lightgreen;
+    background-color: red;
     color: black;
 
     font-size: 18px;
-    width: 70%;
+    width: 85%;
 
     border: none;
     border-radius: 20px;
