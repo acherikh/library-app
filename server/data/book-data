@@ -7,6 +7,7 @@
         "genre": "Fiction",
         "slugName": "to-kill-a-mockingbird",
         "slugAuthor": "harper-lee",
+        "isbn": "9780061120084",
         "users": []
     },
     {
@@ -17,6 +18,7 @@
         "genre": "Dystopian Fiction",
         "slugName": "1984",
         "slugAuthor": "george-orwell",
+        "isbn": "9780451524935",
         "users": []
     },
     {
@@ -27,6 +29,7 @@
         "genre": "Fiction",
         "slugName": "the-great-gatsby",
         "slugAuthor": "f-scott-fitzgerald",
+        "isbn": "9780743273565",
         "users": []
     },
     {
@@ -37,6 +40,7 @@
         "genre": "Fiction",
         "slugName": "the-catcher-in-the-rye",
         "slugAuthor": "j-d-salinger",
+        "isbn": "9780316769488",
         "users": []
     },
     {
@@ -47,6 +51,7 @@
         "genre": "Modernist Literature",
         "slugName": "to-the-lighthouse",
         "slugAuthor": "virginia-woolf",
+        "isbn": "9780156907392",
         "users": []
     },
     {
@@ -57,6 +62,7 @@
         "genre": "Dystopian Fiction",
         "slugName": "brave-new-world",
         "slugAuthor": "aldous-huxley",
+        "isbn": "9780060850524",
         "users": []
     },
     {
@@ -67,6 +73,7 @@
         "genre": "Dystopian Fiction",
         "slugName": "fahrenheit-451",
         "slugAuthor": "ray-bradbury",
+        "isbn": "9781451673319",
         "users": []
     },
     {
@@ -77,6 +84,7 @@
         "genre": "Romance",
         "slugName": "pride-and-prejudice",
         "slugAuthor": "jane-austen",
+        "isbn": "9780141439518",
         "users": []
     },
     {
@@ -87,6 +95,7 @@
         "genre": "Fantasy",
         "slugName": "the-hobbit",
         "slugAuthor": "j-r-r-tolkien",
+        "isbn": "9780345534835",
         "users": []
     },
     {
@@ -97,6 +106,7 @@
         "genre": "Adventure",
         "slugName": "moby-dick",
         "slugAuthor": "herman-melville",
+        "isbn": "9780142437247",
         "users": []
     },
     {
@@ -107,6 +117,7 @@
         "genre": "Fantasy",
         "slugName": "the-lord-of-the-rings",
         "slugAuthor": "j-r-r-tolkien",
+        "isbn": "9780618640157",
         "users": []
     },
     {
@@ -117,6 +128,7 @@
         "genre": "Gothic Fiction",
         "slugName": "jane-eyre",
         "slugAuthor": "charlotte-bronte",
+        "isbn": "9780142437209",
         "users": []
     },
     {
@@ -127,6 +139,7 @@
         "genre": "Fantasy",
         "slugName": "the-chronicles-of-narnia",
         "slugAuthor": "c-s-lewis",
+        "isbn": "9780066238500",
         "users": []
     },
     {
@@ -137,6 +150,7 @@
         "genre": "Fantasy",
         "slugName": "alices-adventures-in-wonderland",
         "slugAuthor": "lewis-carroll",
+        "isbn": "9780141439761",
         "users": []
     },
     {
@@ -147,6 +161,7 @@
         "genre": "Gothic Fiction",
         "slugName": "the-picture-of-dorian-gray",
         "slugAuthor": "oscar-wilde",
+        "isbn": "9780141439570",
         "users": []
     },
     {
@@ -157,6 +172,7 @@
         "genre": "Semi-Autobiographical Fiction",
         "slugName": "the-bell-jar",
         "slugAuthor": "sylvia-plath",
+        "isbn": "9780061148514",
         "users": []
     },
     {
@@ -167,6 +183,7 @@
         "genre": "Allegorical Novel",
         "slugName": "lord-of-the-flies",
         "slugAuthor": "william-golding",
+        "isbn": "9780399501487",
         "users": []
     },
     {
@@ -177,6 +194,7 @@
         "genre": "Gothic Fiction",
         "slugName": "wuthering-heights",
         "slugAuthor": "emily-bronte",
+        "isbn": "9780141439556",
         "users": []
     },
     {
@@ -187,6 +205,7 @@
         "genre": "Satire",
         "slugName": "animal-farm",
         "slugAuthor": "george-orwell",
+        "isbn": "9780451526342",
         "users": []
     },
     {
@@ -197,6 +216,7 @@
         "genre": "Historical Fiction",
         "slugName": "gone-with-the-wind",
         "slugAuthor": "margaret-mitchell",
+        "isbn": "9781416548898",
         "users": []
     },
     {
@@ -207,6 +227,7 @@
         "genre": "Historical Fiction",
         "slugName": "les-miserables",
         "slugAuthor": "victor-hugo",
+        "isbn": "9780140444308",
         "users": []
     },
     {
@@ -217,6 +238,7 @@
         "genre": "Realism",
         "slugName": "the-grapes-of-wrath",
         "slugAuthor": "john-steinbeck",
+        "isbn": "9780143039433",
         "users": []
     },
     {
@@ -227,6 +249,7 @@
         "genre": "Realism",
         "slugName": "anna-karenina",
         "slugAuthor": "leo-tolstoy",
+        "isbn": "9780143035008",
         "users": []
     },
     {
@@ -237,6 +260,7 @@
         "genre": "Adventure",
         "slugName": "the-adventures-of-huckleberry-finn",
         "slugAuthor": "mark-twain",
+        "isbn": "9780143107323",
         "users": []
     },
     {
@@ -247,6 +271,7 @@
         "genre": "Historical Fiction",
         "slugName": "war-and-peace",
         "slugAuthor": "leo-tolstoy",
+        "isbn": "9781400079988",
         "users": []
     },
     {
@@ -257,6 +282,7 @@
         "genre": "Philosophical Novel",
         "slugName": "crime-and-punishment",
         "slugAuthor": "fyodor-dostoevsky",
+        "isbn": "9780140449136",
         "users": []
     },
     {
@@ -267,6 +293,7 @@
         "genre": "Philosophical Novel",
         "slugName": "the-brothers-karamazov",
         "slugAuthor": "fyodor-dostoevsky",
+        "isbn": "9780140449242",
         "users": []
     },
     {
@@ -277,6 +304,7 @@
         "genre": "Magical Realism",
         "slugName": "one-hundred-years-of-solitude",
         "slugAuthor": "gabriel-garcia-marquez",
+        "isbn": "9780060883287",
         "users": []
     },
     {
@@ -287,6 +315,7 @@
         "genre": "Adventure",
         "slugName": "the-old-man-and-the-sea",
         "slugAuthor": "ernest-hemingway",
+        "isbn": "9780684801223",
         "users": []
     },
     {
@@ -297,6 +326,7 @@
         "genre": "Romance",
         "slugName": "the-scarlet-letter",
         "slugAuthor": "nathaniel-hawthorne",
+        "isbn": "9780142437261",
         "users": []
     },
     {
@@ -307,6 +337,7 @@
         "genre": "Gothic Fiction",
         "slugName": "frankenstein",
         "slugAuthor": "mary-shelley",
+        "isbn": "9780141439471",
         "users": []
     },
     {
@@ -317,6 +348,7 @@
         "genre": "Post-apocalyptic Fiction",
         "slugName": "the-road",
         "slugAuthor": "cormac-mccarthy",
+        "isbn": "9780307387899",
         "users": []
     },
     {
@@ -327,6 +359,7 @@
         "genre": "Dystopian Fiction",
         "slugName": "the-handmaids-tale",
         "slugAuthor": "margaret-atwood",
+        "isbn": "9780385490818",
         "users": []
     },
     {
@@ -337,6 +370,7 @@
         "genre": "Magical Realism",
         "slugName": "beloved",
         "slugAuthor": "toni-morrison",
+        "isbn": "9781400033416",
         "users": []
     },
     {
@@ -347,6 +381,7 @@
         "genre": "Science Fiction",
         "slugName": "the-hitchhikers-guide-to-the-galaxy",
         "slugAuthor": "douglas-adams",
+        "isbn": "9780345391803",
         "users": []
     },
     {
@@ -357,6 +392,7 @@
         "genre": "Adventure",
         "slugName": "heart-of-darkness",
         "slugAuthor": "joseph-conrad",
+        "isbn": "9781503290912",
         "users": []
     },
     {
@@ -367,6 +403,7 @@
         "genre": "Horror",
         "slugName": "the-shining",
         "slugAuthor": "stephen-king",
+        "isbn": "9780307743657",
         "users": []
     },
     {
@@ -377,6 +414,7 @@
         "genre": "Science Fiction",
         "slugName": "slaughterhouse-five",
         "slugAuthor": "kurt-vonnegut",
+        "isbn": "9780440180296",
         "users": []
     },
     {
@@ -387,6 +425,7 @@
         "genre": "Satire",
         "slugName": "catch-22",
         "slugAuthor": "joseph-heller",
+        "isbn": "9780684833391",
         "users": []
     },
     {
@@ -397,6 +436,7 @@
         "genre": "Epistolary Novel",
         "slugName": "the-color-purple",
         "slugAuthor": "alice-walker",
+        "isbn": "9780156031820",
         "users": []
     },
     {
@@ -407,6 +447,7 @@
         "genre": "Graphic Novel",
         "slugName": "maus",
         "slugAuthor": "art-spiegelman",
+        "isbn": "9780394747231",
         "users": []
     },
     {
@@ -417,16 +458,7 @@
         "genre": "Graphic Novel",
         "slugName": "persepolis",
         "slugAuthor": "marjane-satrapi",
-        "users": []
-    },
-    {
-        "name": "The Handmaid's Tale",
-        "author": "Margaret Atwood",
-        "pages": 311,
-        "year": 1985,
-        "genre": "Dystopian Fiction",
-        "slugName": "the-handmaids-tale",
-        "slugAuthor": "margaret-atwood",
+        "isbn": "9780375714573",
         "users": []
     },
     {
@@ -437,6 +469,7 @@
         "genre": "Fantasy",
         "slugName": "american-gods",
         "slugAuthor": "neil-gaiman",
+        "isbn": "9780060558123",
         "users": []
     },
     {
@@ -447,6 +480,7 @@
         "genre": "Mystery",
         "slugName": "the-secret-history",
         "slugAuthor": "donna-tartt",
+        "isbn": "9780140167771",
         "users": []
     },
     {
@@ -457,6 +491,7 @@
         "genre": "Mystery",
         "slugName": "the-girl-with-the-dragon-tattoo",
         "slugAuthor": "stieg-larsson",
+        "isbn": "9780307269751",
         "users": []
     },
     {
@@ -467,6 +502,7 @@
         "genre": "Fantasy",
         "slugName": "a-game-of-thrones",
         "slugAuthor": "george-r-r-martin",
+        "isbn": "9780553381689",
         "users": []
     },
     {
@@ -477,6 +513,7 @@
         "genre": "Dystopian Fiction",
         "slugName": "the-hunger-games",
         "slugAuthor": "suzanne-collins",
+        "isbn": "9780439023528",
         "users": []
     },
     {
@@ -486,6 +523,8 @@
         "year": 2003,
         "genre": "Mystery",
         "slugName": "the-da-vinci-code",
-        "slugAuthor": "dan-brown"
+        "slugAuthor": "dan-brown",
+        "isbn": "9780307474278",
+        "users": []
     }
 ]

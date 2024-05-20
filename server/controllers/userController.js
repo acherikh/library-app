@@ -30,6 +30,21 @@ exports.getUserBooks = catchAsyncError(async (req, res, next) => {
     });
 });
 
+exports.getUserBook = catchAsyncError(async (req, res, next) => {
+    const user = await User.findById(req.user.id);
+    const book = user.books.filter((book) =>
+        book.equals(req.params.id)
+    )[0];
+
+    res.status(200).json({
+        status: 'success',
+        message: 'Correctly fetched users books',
+        data: {
+            book,
+        },
+    });
+});
+
 exports.addBookToMyLibrary = catchAsyncError(
     async (req, res, next) => {
         const user = await User.findById(req.user.id);

@@ -14,6 +14,7 @@ router.get(
     userController.getUserBooks
 );
 
+router.get('/myBooks/:id', userController.getUserBook);
 router.delete('/myBooks/:id', userController.removeBookFromMyLibrary);
 
 router.patch(
