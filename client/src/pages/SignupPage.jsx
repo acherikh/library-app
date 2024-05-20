@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import './LoginPage.css';
+import '../styles/SignupPage.css';
 
-function LoginPage() {
+function SignupPage() {
     const navigate = useNavigate();
 
     let URL;
@@ -14,13 +14,14 @@ function LoginPage() {
         URL = `${import.meta.env.VITE_LOCAL_API_URL}`;
     }
 
-    const BASE_URL = `${URL}/api/auth/login`;
+    const BASE_URL = `${URL}/api/auth/signup`;
 
     const [formData, setFormData] = useState({
+        name: '',
         email: '',
         password: '',
+        passwordConfirm: '',
     });
-    const [noError, setNoError] = useState(true);
 
     const handleChange = (e) => {
         setFormData({
@@ -29,37 +30,43 @@ function LoginPage() {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
 
-        try {
-            const response = await fetch(BASE_URL, {
-                method: 'POST',
-                credentials: 'include', // <- this is mandatory to deal with cookies
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response) {
-                const data = await response.json();
-                console.log(data);
+        fetch(BASE_URL, {
+            method: 'POST',
+            credentials: 'include',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then((response) => response.json())
+            .then((data) => {
                 if (data.status === 'success') {
                     navigate('/library');
                 }
-            }
-        } catch (err) {
-            setNoError(false);
-        }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     };
 
     return (
-        <div className='signin-page'>
+        <div className='signup-page'>
             <div className='auth-box'>
-                <h1>Signin Form</h1>
-                <div className='signin-form'>
+                <h1>Signup Form</h1>
+                <div className='signup-form'>
                     <form onSubmit={handleSubmit}>
+                        <input
+                            type='text'
+                            id='name'
+                            name='name'
+                            placeholder='Username'
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                        />
                         <input
                             type='email'
                             id='email'
@@ -78,20 +85,26 @@ function LoginPage() {
                             onChange={handleChange}
                             required
                         />
-                        <div className='forgot-password'>
-                            <Link to='/user/forgot-password'>
-                                <p>Forgot Password ?</p>
-                            </Link>
-                        </div>
+                        <input
+                            type='password'
+                            id='passwordConfirm'
+                            name='passwordConfirm'
+                            placeholder='Confirm Password'
+                            value={formData.passwordConfirm}
+                            onChange={handleChange}
+                            required
+                        />
                         <div className='button-flex'>
                             <button
-                                className='signin-button'
+                                className='signup-button'
                                 type='submit'
                             >
-                                Sign In
+                                Sign Up
                             </button>
-                            <Link to='/auth/signup'>
-                                <p className='signup-text'>Sign Up</p>
+                            <Link to='/auth/login'>
+                                <p className='sign-in-button'>
+                                    Sign In
+                                </p>
                             </Link>
                         </div>
                     </form>
@@ -101,4 +114,4 @@ function LoginPage() {
     );
 }
 
-export default LoginPage;
+export default SignupPage;

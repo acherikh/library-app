@@ -162,11 +162,13 @@ exports.isLoggedIn = async (req, res, next) => {
             // 2) Check if user still exists
             const currentUser = await User.findById(decoded.id);
             if (!currentUser) {
+                res.redirect('/');
                 return next();
             }
 
             // 3) Check if user changed password after the token was issued
             if (currentUser.changedPasswordAfter(decoded.iat)) {
+                res.redirect('/');
                 return next();
             }
 
@@ -174,9 +176,11 @@ exports.isLoggedIn = async (req, res, next) => {
             res.locals.user = currentUser;
             return next();
         } catch (err) {
+            res.redirect('/');
             return next();
         }
     }
+    res.redirect('/');
     next();
 };
 

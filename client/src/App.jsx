@@ -6,16 +6,16 @@ import {
     Navigate,
 } from 'react-router-dom';
 
-import LibraryPage from './LibraryPage';
-import SignupPage from './SignupPage';
-import LoginPage from './LoginPage';
-import DashboardPage from './DashboardPage';
-import ForgotPasswordPage from './ForgotPasswordPage';
-import ResetPasswordPage from './ResetPasswordPage';
-import UpdateMePage from './UpdateMePage';
-import MyBooksPage from './MyBooksPage';
-import BookPage from './BookPage';
-import AuthorPage from './AuthorPage';
+import LibraryPage from './pages/LibraryPage';
+import SignupPage from './pages/SignupPage';
+import LoginPage from './pages/LoginPage';
+import DashboardPage from './pages/DashboardPage';
+import ForgotPasswordPage from './pages/ForgotPasswordPage';
+import ResetPasswordPage from './pages/ResetPasswordPage';
+import UpdateMePage from './pages/UpdateMePage';
+import MyBooksPage from './pages/MyBooksPage';
+import BookPage from './pages/BookPage';
+import AuthorPage from './pages/AuthorPage';
 
 function App() {
     return (

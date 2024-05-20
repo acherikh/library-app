@@ -1,0 +1,49 @@
+.user-drawer {
+    position: fixed;
+    top: 70px;
+    right: 0;
+
+    height: calc(100vh - 70px);
+    width: 100vw;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* Start off-screen to the right */
+}
+
+.user-drawer.open {
+    transform: translateX(0); /* Slide in when open */
+}
+
+.user-drawer .drawer-button {
+    background-color: white;
+
+    border: none;
+    text-align: center;
+    height: 34%;
+    width: 100%;
+    font-size: 140%;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-drawer .drawer-button:hover {
+    background-color: lightgrey;
+}
+
+.user-drawer .drawer-button:active {
+    background-color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+    .library-page .user-drawer {
+        width: 25vw;
+    }
+}

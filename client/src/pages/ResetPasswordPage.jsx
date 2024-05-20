@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-import './ResetPasswordPage.css';
+import '../styles/ResetPasswordPage.css';
 
 function ResetPasswordPage() {
     const params = useParams();
