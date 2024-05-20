@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import './Drawer.css';
 
-const Drawer = ({ isDrawerOpen }) => {
+const Drawer = ({ isDrawerOpen, onKeyDown }) => {
     const navigate = useNavigate();
     return (
         <div className={`user-drawer ${isDrawerOpen ? 'open' : ''}`}>
@@ -14,7 +14,12 @@ const Drawer = ({ isDrawerOpen }) => {
             >
                 My Books
             </button>
-            <button className='drawer-button'>Log Out</button>
+            <button
+                className='drawer-button'
+                onClick={() => navigate('/auth/logout')}
+            >
+                Log Out
+            </button>
         </div>
     );
 };

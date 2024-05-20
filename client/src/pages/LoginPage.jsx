@@ -20,6 +20,8 @@ function LoginPage() {
         email: '',
         password: '',
     });
+    const [errorMessage, setErrorMessage] = useState('');
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [noError, setNoError] = useState(true);
 
     const handleChange = (e) => {
@@ -45,7 +47,10 @@ function LoginPage() {
             if (response) {
                 const data = await response.json();
                 if (data.status === 'success') {
+                    setIsLoggedIn(true);
                     navigate('/library');
+                } else {
+                    setErrorMessage(data.message);
                 }
             }
         } catch (err) {
@@ -77,6 +82,11 @@ function LoginPage() {
                             onChange={handleChange}
                             required
                         />
+                        {errorMessage && (
+                            <div className='error-message'>
+                                {errorMessage}
+                            </div>
+                        )}
                         <div className='forgot-password'>
                             <Link to='/user/forgot-password'>
                                 <p>Forgot Password ?</p>

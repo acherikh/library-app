@@ -8,8 +8,6 @@ import Header from '../components/Header';
 import BookContainer from '../components/BookContainer';
 
 function LibraryPage() {
-    const navigate = useNavigate();
-
     const [totalCount, setTotalCount] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(12);
@@ -122,6 +120,18 @@ function LibraryPage() {
             setNoError(false);
         }
     };
+
+    useEffect(() => {
+        function handleEscapeKey(event) {
+            if (event.code === 'Escape') {
+                setIsDrawerOpen(false);
+            }
+        }
+
+        document.addEventListener('keydown', handleEscapeKey);
+        return () =>
+            document.removeEventListener('keydown', handleEscapeKey);
+    }, []);
 
     return (
         <div className='library-page'>

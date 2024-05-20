@@ -109,7 +109,7 @@ const MyBooksPage = () => {
 
     const handleRemoveFromLibrary = async (id) => {
         try {
-            await fetch(`${URL}/api/library/${id}`, {
+            await fetch(`${URL}/api/user/myBooks/${id}`, {
                 method: 'DELETE',
                 credentials: 'include',
                 headers: {
@@ -121,6 +121,18 @@ const MyBooksPage = () => {
             setNoError(false);
         }
     };
+
+    useEffect(() => {
+        function handleEscapeKey(event) {
+            if (event.code === 'Escape') {
+                setIsDrawerOpen(false);
+            }
+        }
+
+        document.addEventListener('keydown', handleEscapeKey);
+        return () =>
+            document.removeEventListener('keydown', handleEscapeKey);
+    }, []);
 
     return (
         <div className='my-books-page'>

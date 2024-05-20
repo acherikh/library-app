@@ -6,7 +6,8 @@
         "year": 1960,
         "genre": "Fiction",
         "slugName": "to-kill-a-mockingbird",
-        "slugAuthor": "harper-lee"
+        "slugAuthor": "harper-lee",
+        "users": []
     },
     {
         "name": "1984",
@@ -15,7 +16,8 @@
         "year": 1949,
         "genre": "Dystopian Fiction",
         "slugName": "1984",
-        "slugAuthor": "george-orwell"
+        "slugAuthor": "george-orwell",
+        "users": []
     },
     {
         "name": "The Great Gatsby",
@@ -24,7 +26,8 @@
         "year": 1925,
         "genre": "Fiction",
         "slugName": "the-great-gatsby",
-        "slugAuthor": "f-scott-fitzgerald"
+        "slugAuthor": "f-scott-fitzgerald",
+        "users": []
     },
     {
         "name": "The Catcher in the Rye",
@@ -33,7 +36,8 @@
         "year": 1951,
         "genre": "Fiction",
         "slugName": "the-catcher-in-the-rye",
-        "slugAuthor": "j-d-salinger"
+        "slugAuthor": "j-d-salinger",
+        "users": []
     },
     {
         "name": "To the Lighthouse",
@@ -42,7 +46,8 @@
         "year": 1927,
         "genre": "Modernist Literature",
         "slugName": "to-the-lighthouse",
-        "slugAuthor": "virginia-woolf"
+        "slugAuthor": "virginia-woolf",
+        "users": []
     },
     {
         "name": "Brave New World",
@@ -51,7 +56,8 @@
         "year": 1932,
         "genre": "Dystopian Fiction",
         "slugName": "brave-new-world",
-        "slugAuthor": "aldous-huxley"
+        "slugAuthor": "aldous-huxley",
+        "users": []
     },
     {
         "name": "Fahrenheit 451",
@@ -60,7 +66,8 @@
         "year": 1953,
         "genre": "Dystopian Fiction",
         "slugName": "fahrenheit-451",
-        "slugAuthor": "ray-bradbury"
+        "slugAuthor": "ray-bradbury",
+        "users": []
     },
     {
         "name": "Pride and Prejudice",
@@ -69,7 +76,8 @@
         "year": 1813,
         "genre": "Romance",
         "slugName": "pride-and-prejudice",
-        "slugAuthor": "jane-austen"
+        "slugAuthor": "jane-austen",
+        "users": []
     },
     {
         "name": "The Hobbit",
@@ -78,7 +86,8 @@
         "year": 1937,
         "genre": "Fantasy",
         "slugName": "the-hobbit",
-        "slugAuthor": "j-r-r-tolkien"
+        "slugAuthor": "j-r-r-tolkien",
+        "users": []
     },
     {
         "name": "Moby Dick",
@@ -87,7 +96,8 @@
         "year": 1851,
         "genre": "Adventure",
         "slugName": "moby-dick",
-        "slugAuthor": "herman-melville"
+        "slugAuthor": "herman-melville",
+        "users": []
     },
     {
         "name": "The Lord of the Rings",
@@ -96,7 +106,8 @@
         "year": 1954,
         "genre": "Fantasy",
         "slugName": "the-lord-of-the-rings",
-        "slugAuthor": "j-r-r-tolkien"
+        "slugAuthor": "j-r-r-tolkien",
+        "users": []
     },
     {
         "name": "Jane Eyre",
@@ -105,7 +116,8 @@
         "year": 1847,
         "genre": "Gothic Fiction",
         "slugName": "jane-eyre",
-        "slugAuthor": "charlotte-bronte"
+        "slugAuthor": "charlotte-bronte",
+        "users": []
     },
     {
         "name": "The Chronicles of Narnia",
@@ -114,7 +126,8 @@
         "year": 1950,
         "genre": "Fantasy",
         "slugName": "the-chronicles-of-narnia",
-        "slugAuthor": "c-s-lewis"
+        "slugAuthor": "c-s-lewis",
+        "users": []
     },
     {
         "name": "Alice's Adventures in Wonderland",
@@ -123,7 +136,8 @@
         "year": 1865,
         "genre": "Fantasy",
         "slugName": "alices-adventures-in-wonderland",
-        "slugAuthor": "lewis-carroll"
+        "slugAuthor": "lewis-carroll",
+        "users": []
     },
     {
         "name": "The Picture of Dorian Gray",
@@ -132,7 +146,8 @@
         "year": 1890,
         "genre": "Gothic Fiction",
         "slugName": "the-picture-of-dorian-gray",
-        "slugAuthor": "oscar-wilde"
+        "slugAuthor": "oscar-wilde",
+        "users": []
     },
     {
         "name": "The Bell Jar",
@@ -141,7 +156,8 @@
         "year": 1963,
         "genre": "Semi-Autobiographical Fiction",
         "slugName": "the-bell-jar",
-        "slugAuthor": "sylvia-plath"
+        "slugAuthor": "sylvia-plath",
+        "users": []
     },
     {
         "name": "Lord of the Flies",
@@ -150,7 +166,8 @@
         "year": 1954,
         "genre": "Allegorical Novel",
         "slugName": "lord-of-the-flies",
-        "slugAuthor": "william-golding"
+        "slugAuthor": "william-golding",
+        "users": []
     },
     {
         "name": "Wuthering Heights",
@@ -159,7 +176,8 @@
         "year": 1847,
         "genre": "Gothic Fiction",
         "slugName": "wuthering-heights",
-        "slugAuthor": "emily-bronte"
+        "slugAuthor": "emily-bronte",
+        "users": []
     },
     {
         "name": "Animal Farm",
@@ -168,7 +186,8 @@
         "year": 1945,
         "genre": "Satire",
         "slugName": "animal-farm",
-        "slugAuthor": "george-orwell"
+        "slugAuthor": "george-orwell",
+        "users": []
     },
     {
         "name": "Gone with the Wind",
@@ -177,7 +196,8 @@
         "year": 1936,
         "genre": "Historical Fiction",
         "slugName": "gone-with-the-wind",
-        "slugAuthor": "margaret-mitchell"
+        "slugAuthor": "margaret-mitchell",
+        "users": []
     },
     {
         "name": "Les Misérables",
@@ -186,7 +206,8 @@
         "year": 1862,
         "genre": "Historical Fiction",
         "slugName": "les-miserables",
-        "slugAuthor": "victor-hugo"
+        "slugAuthor": "victor-hugo",
+        "users": []
     },
     {
         "name": "The Grapes of Wrath",
@@ -195,7 +216,8 @@
         "year": 1939,
         "genre": "Realism",
         "slugName": "the-grapes-of-wrath",
-        "slugAuthor": "john-steinbeck"
+        "slugAuthor": "john-steinbeck",
+        "users": []
     },
     {
         "name": "Anna Karenina",
@@ -204,7 +226,8 @@
         "year": 1877,
         "genre": "Realism",
         "slugName": "anna-karenina",
-        "slugAuthor": "leo-tolstoy"
+        "slugAuthor": "leo-tolstoy",
+        "users": []
     },
     {
         "name": "The Adventures of Huckleberry Finn",
@@ -213,7 +236,8 @@
         "year": 1884,
         "genre": "Adventure",
         "slugName": "the-adventures-of-huckleberry-finn",
-        "slugAuthor": "mark-twain"
+        "slugAuthor": "mark-twain",
+        "users": []
     },
     {
         "name": "War and Peace",
@@ -222,7 +246,8 @@
         "year": 1869,
         "genre": "Historical Fiction",
         "slugName": "war-and-peace",
-        "slugAuthor": "leo-tolstoy"
+        "slugAuthor": "leo-tolstoy",
+        "users": []
     },
     {
         "name": "Crime and Punishment",
@@ -231,7 +256,8 @@
         "year": 1866,
         "genre": "Philosophical Novel",
         "slugName": "crime-and-punishment",
-        "slugAuthor": "fyodor-dostoevsky"
+        "slugAuthor": "fyodor-dostoevsky",
+        "users": []
     },
     {
         "name": "The Brothers Karamazov",
@@ -240,7 +266,8 @@
         "year": 1880,
         "genre": "Philosophical Novel",
         "slugName": "the-brothers-karamazov",
-        "slugAuthor": "fyodor-dostoevsky"
+        "slugAuthor": "fyodor-dostoevsky",
+        "users": []
     },
     {
         "name": "One Hundred Years of Solitude",
@@ -249,7 +276,8 @@
         "year": 1967,
         "genre": "Magical Realism",
         "slugName": "one-hundred-years-of-solitude",
-        "slugAuthor": "gabriel-garcia-marquez"
+        "slugAuthor": "gabriel-garcia-marquez",
+        "users": []
     },
     {
         "name": "The Old Man and the Sea",
@@ -258,7 +286,8 @@
         "year": 1952,
         "genre": "Adventure",
         "slugName": "the-old-man-and-the-sea",
-        "slugAuthor": "ernest-hemingway"
+        "slugAuthor": "ernest-hemingway",
+        "users": []
     },
     {
         "name": "The Scarlet Letter",
@@ -267,7 +296,8 @@
         "year": 1850,
         "genre": "Romance",
         "slugName": "the-scarlet-letter",
-        "slugAuthor": "nathaniel-hawthorne"
+        "slugAuthor": "nathaniel-hawthorne",
+        "users": []
     },
     {
         "name": "Frankenstein",
@@ -276,7 +306,8 @@
         "year": 1818,
         "genre": "Gothic Fiction",
         "slugName": "frankenstein",
-        "slugAuthor": "mary-shelley"
+        "slugAuthor": "mary-shelley",
+        "users": []
     },
     {
         "name": "The Road",
@@ -285,7 +316,8 @@
         "year": 2006,
         "genre": "Post-apocalyptic Fiction",
         "slugName": "the-road",
-        "slugAuthor": "cormac-mccarthy"
+        "slugAuthor": "cormac-mccarthy",
+        "users": []
     },
     {
         "name": "The Handmaid's Tale",
@@ -294,7 +326,8 @@
         "year": 1985,
         "genre": "Dystopian Fiction",
         "slugName": "the-handmaids-tale",
-        "slugAuthor": "margaret-atwood"
+        "slugAuthor": "margaret-atwood",
+        "users": []
     },
     {
         "name": "Beloved",
@@ -303,7 +336,8 @@
         "year": 1987,
         "genre": "Magical Realism",
         "slugName": "beloved",
-        "slugAuthor": "toni-morrison"
+        "slugAuthor": "toni-morrison",
+        "users": []
     },
     {
         "name": "The Hitchhiker's Guide to the Galaxy",
@@ -312,7 +346,8 @@
         "year": 1979,
         "genre": "Science Fiction",
         "slugName": "the-hitchhikers-guide-to-the-galaxy",
-        "slugAuthor": "douglas-adams"
+        "slugAuthor": "douglas-adams",
+        "users": []
     },
     {
         "name": "Heart of Darkness",
@@ -321,7 +356,8 @@
         "year": 1899,
         "genre": "Adventure",
         "slugName": "heart-of-darkness",
-        "slugAuthor": "joseph-conrad"
+        "slugAuthor": "joseph-conrad",
+        "users": []
     },
     {
         "name": "The Shining",
@@ -330,7 +366,8 @@
         "year": 1977,
         "genre": "Horror",
         "slugName": "the-shining",
-        "slugAuthor": "stephen-king"
+        "slugAuthor": "stephen-king",
+        "users": []
     },
     {
         "name": "Slaughterhouse-Five",
@@ -339,7 +376,8 @@
         "year": 1969,
         "genre": "Science Fiction",
         "slugName": "slaughterhouse-five",
-        "slugAuthor": "kurt-vonnegut"
+        "slugAuthor": "kurt-vonnegut",
+        "users": []
     },
     {
         "name": "Catch-22",
@@ -348,7 +386,8 @@
         "year": 1961,
         "genre": "Satire",
         "slugName": "catch-22",
-        "slugAuthor": "joseph-heller"
+        "slugAuthor": "joseph-heller",
+        "users": []
     },
     {
         "name": "The Color Purple",
@@ -357,7 +396,8 @@
         "year": 1982,
         "genre": "Epistolary Novel",
         "slugName": "the-color-purple",
-        "slugAuthor": "alice-walker"
+        "slugAuthor": "alice-walker",
+        "users": []
     },
     {
         "name": "Maus",
@@ -366,7 +406,8 @@
         "year": 1986,
         "genre": "Graphic Novel",
         "slugName": "maus",
-        "slugAuthor": "art-spiegelman"
+        "slugAuthor": "art-spiegelman",
+        "users": []
     },
     {
         "name": "Persepolis",
@@ -375,7 +416,8 @@
         "year": 2000,
         "genre": "Graphic Novel",
         "slugName": "persepolis",
-        "slugAuthor": "marjane-satrapi"
+        "slugAuthor": "marjane-satrapi",
+        "users": []
     },
     {
         "name": "The Handmaid's Tale",
@@ -384,7 +426,8 @@
         "year": 1985,
         "genre": "Dystopian Fiction",
         "slugName": "the-handmaids-tale",
-        "slugAuthor": "margaret-atwood"
+        "slugAuthor": "margaret-atwood",
+        "users": []
     },
     {
         "name": "American Gods",
@@ -393,7 +436,8 @@
         "year": 2001,
         "genre": "Fantasy",
         "slugName": "american-gods",
-        "slugAuthor": "neil-gaiman"
+        "slugAuthor": "neil-gaiman",
+        "users": []
     },
     {
         "name": "The Secret History",
@@ -402,7 +446,8 @@
         "year": 1992,
         "genre": "Mystery",
         "slugName": "the-secret-history",
-        "slugAuthor": "donna-tartt"
+        "slugAuthor": "donna-tartt",
+        "users": []
     },
     {
         "name": "The Girl with the Dragon Tattoo",
@@ -411,7 +456,8 @@
         "year": 2005,
         "genre": "Mystery",
         "slugName": "the-girl-with-the-dragon-tattoo",
-        "slugAuthor": "stieg-larsson"
+        "slugAuthor": "stieg-larsson",
+        "users": []
     },
     {
         "name": "A Game of Thrones",
@@ -420,7 +466,8 @@
         "year": 1996,
         "genre": "Fantasy",
         "slugName": "a-game-of-thrones",
-        "slugAuthor": "george-r-r-martin"
+        "slugAuthor": "george-r-r-martin",
+        "users": []
     },
     {
         "name": "The Hunger Games",
@@ -429,7 +476,8 @@
         "year": 2008,
         "genre": "Dystopian Fiction",
         "slugName": "the-hunger-games",
-        "slugAuthor": "suzanne-collins"
+        "slugAuthor": "suzanne-collins",
+        "users": []
     },
     {
         "name": "The Da Vinci Code",

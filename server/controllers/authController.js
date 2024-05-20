@@ -20,7 +20,7 @@ exports.protect = catchAsyncError(async (req, res, next) => {
         token = req.cookies.jwt;
     }
 
-    if (!token) {
+    if (!token || token === 'loggedout') {
         return next(
             new AppError(
                 'You are not logged in! Please log in to get access.',
@@ -28,7 +28,6 @@ exports.protect = catchAsyncError(async (req, res, next) => {
             )
         );
     }
-
     // 2) Verification token
     const decoded = await promisify(jwt.verify)(
         token,
@@ -162,13 +161,11 @@ exports.isLoggedIn = async (req, res, next) => {
             // 2) Check if user still exists
             const currentUser = await User.findById(decoded.id);
             if (!currentUser) {
-                res.redirect('/');
                 return next();
             }
 
             // 3) Check if user changed password after the token was issued
             if (currentUser.changedPasswordAfter(decoded.iat)) {
-                res.redirect('/');
                 return next();
             }
 
@@ -176,17 +173,15 @@ exports.isLoggedIn = async (req, res, next) => {
             res.locals.user = currentUser;
             return next();
         } catch (err) {
-            res.redirect('/');
             return next();
         }
     }
-    res.redirect('/');
     next();
 };
 
 exports.logout = (req, res) => {
     if (process.env.NODE_ENV !== 'local') {
-        res.cookie('jwt', token, {
+        res.cookie('jwt', 'loggedout', {
             sameSite: 'None',
             maxAge: 1000 * 60 * 60,
             httpOnly: true,
@@ -195,7 +190,7 @@ exports.logout = (req, res) => {
                 req.headers['x-forwarded-proto'] === 'https',
         });
     } else {
-        res.cookie('jwt', token, {
+        res.cookie('jwt', 'loggedout', {
             sameSite: 'Strict',
             maxAge: 1000 * 60 * 60,
             httpOnly: true,
