@@ -1,13 +1,36 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import './LibraryPage.css';
-import bookPlaceholder from '../img/book-cover-placeholder.png';
-import profilePicture from '../img/profile_pic.jpg';
+import '../styles/LibraryPage.css';
+
+import Drawer from '../components/Drawer';
+import Header from '../components/Header';
+import BookContainer from '../components/BookContainer';
 
 function LibraryPage() {
     const [totalCount, setTotalCount] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(12);
+    const [itemsPerPage, setItemsPerPage] = useState(50);
+
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const handleDrawer = () => {
+        setIsDrawerOpen(!isDrawerOpen);
+    };
+    useEffect(() => {
+        document.body.style.overflow = isDrawerOpen
+            ? 'hidden'
+            : 'unset';
+
+        const booksContainer = document.querySelector(
+            '.books-container'
+        );
+        booksContainer.style.filter = isDrawerOpen
+            ? 'brightness(80%)'
+            : 'brightness(100%)';
+        booksContainer.style.pointerEvents = isDrawerOpen
+            ? 'none'
+            : '';
+    }, [isDrawerOpen]);
 
     let URL;
     if (`${import.meta.env.VITE_NODE_ENV}` === 'development') {
@@ -84,6 +107,20 @@ function LibraryPage() {
         }
     };
 
+    useEffect(() => {
+        function handleEscapeKey(event) {
+            if (event.code === 'Escape') {
+                setIsDrawerOpen(false);
+            }
+        }
+
+        document.addEventListener('keydown', handleEscapeKey);
+        return () =>
+            document.removeEventListener('keydown', handleEscapeKey);
+    }, []);
+
+    const [libraryStatus, setLibraryStatus] = useState({}); // Key: book._id, Value : Boolean
+
     const handleAddToLibrary = async (id) => {
         try {
             await fetch(`${URL}/api/library/${id}`, {
@@ -93,59 +130,32 @@ function LibraryPage() {
                     'Content-Type': 'application/json',
                 },
             });
+            setLibraryStatus((prevStatus) => ({
+                ...prevStatus,
+                [id]: true,
+            }));
         } catch (err) {
-            setNoError(false);
+            console.error('Error adding to library:', err);
         }
     };
 
     return (
         <div className='library-page'>
-            <header className='library-header'>
-                <img
-                    className='library-logo'
-                    src={bookPlaceholder}
-                    onClick={() => window.open('/library', '_self')}
-                />
-                <button onClick={handlePreviousPage}>Previous</button>
-                <button onClick={handleNextPage}>Next</button>
-                <img
-                    className='profile-picture'
-                    src={profilePicture}
-                    onClick={() =>
-                        window.open('/user/my-books', '_self')
-                    }
-                />
-            </header>
+            <Drawer isDrawerOpen={isDrawerOpen} />
+            <Header
+                handlePreviousPage={handlePreviousPage}
+                handleNextPage={handleNextPage}
+                handleDrawer={handleDrawer}
+            />
             <div className='books-container'>
                 {librarypage.map((book) => (
-                    <div className='book-box' key={book._id}>
-                        <div className='book-thumbnail'>
-                            <img src={bookPlaceholder} />
-                        </div>
-                        <div className='book-infos'>
-                            <div className='book-title'>
-                                <strong>{book.name}</strong>
-                            </div>
-                            <div className='book-author'>
-                                Author: {book.author}
-                            </div>
-                            <div className='book-genre'>
-                                Genre: {book.genre}
-                            </div>
-                            <div>Year: {book.year}</div>
-                            <div>Pages: {book.pages}</div>
-                        </div>
-                        <div className='add-button-container'>
-                            <button
-                                className='add-button'
-                                onClick={() =>
-                                    handleAddToLibrary(book._id)
-                                }
-                            >
-                                Add to my library
-                            </button>
-                        </div>
-                    </div>
+                    <BookContainer
+                        book={book}
+                        coverUrl={`https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`}
+                        onAction={handleAddToLibrary}
+                        actionText={'Add to my library'}
+                        key={book._id}
+                    />
                 ))}
             </div>
         </div>

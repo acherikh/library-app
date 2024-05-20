@@ -1,0 +1,101 @@
+.book-box {
+    background-color: white;
+    padding-bottom: 150px;
+    height: 600px;
+    width: 320px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    cursor: pointer;
+}
+
+.book-thumbnail {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.book-cover {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+}
+
+.book-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.book-title {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book-author {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book-genre {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.add-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.add-button {
+    background-color: lightgreen;
+    color: black;
+
+    font-size: 18px;
+    width: 70%;
+
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+
+    cursor: pointer;
+}
+
+.remove-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.remove-button {
+    background-color: red;
+    color: black;
+
+    font-size: 18px;
+    width: 85%;
+
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+
+    cursor: pointer;
+}
+
+.book-box button:hover {
+    opacity: 0.8;
+}
+
+.book-box button:active {
+    opacity: 0.6;
+}

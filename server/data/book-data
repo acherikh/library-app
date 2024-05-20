@@ -6,7 +6,9 @@
         "year": 1960,
         "genre": "Fiction",
         "slugName": "to-kill-a-mockingbird",
-        "slugAuthor": "harper-lee"
+        "slugAuthor": "harper-lee",
+        "isbn": "9780061120084",
+        "users": []
     },
     {
         "name": "1984",
@@ -15,7 +17,9 @@
         "year": 1949,
         "genre": "Dystopian Fiction",
         "slugName": "1984",
-        "slugAuthor": "george-orwell"
+        "slugAuthor": "george-orwell",
+        "isbn": "9780451524935",
+        "users": []
     },
     {
         "name": "The Great Gatsby",
@@ -24,7 +28,9 @@
         "year": 1925,
         "genre": "Fiction",
         "slugName": "the-great-gatsby",
-        "slugAuthor": "f-scott-fitzgerald"
+        "slugAuthor": "f-scott-fitzgerald",
+        "isbn": "9780743273565",
+        "users": []
     },
     {
         "name": "The Catcher in the Rye",
@@ -33,7 +39,9 @@
         "year": 1951,
         "genre": "Fiction",
         "slugName": "the-catcher-in-the-rye",
-        "slugAuthor": "j-d-salinger"
+        "slugAuthor": "j-d-salinger",
+        "isbn": "9780316769488",
+        "users": []
     },
     {
         "name": "To the Lighthouse",
@@ -42,7 +50,9 @@
         "year": 1927,
         "genre": "Modernist Literature",
         "slugName": "to-the-lighthouse",
-        "slugAuthor": "virginia-woolf"
+        "slugAuthor": "virginia-woolf",
+        "isbn": "9780156907392",
+        "users": []
     },
     {
         "name": "Brave New World",
@@ -51,7 +61,9 @@
         "year": 1932,
         "genre": "Dystopian Fiction",
         "slugName": "brave-new-world",
-        "slugAuthor": "aldous-huxley"
+        "slugAuthor": "aldous-huxley",
+        "isbn": "9780060850524",
+        "users": []
     },
     {
         "name": "Fahrenheit 451",
@@ -60,7 +72,9 @@
         "year": 1953,
         "genre": "Dystopian Fiction",
         "slugName": "fahrenheit-451",
-        "slugAuthor": "ray-bradbury"
+        "slugAuthor": "ray-bradbury",
+        "isbn": "9781451673319",
+        "users": []
     },
     {
         "name": "Pride and Prejudice",
@@ -69,7 +83,9 @@
         "year": 1813,
         "genre": "Romance",
         "slugName": "pride-and-prejudice",
-        "slugAuthor": "jane-austen"
+        "slugAuthor": "jane-austen",
+        "isbn": "9780141439518",
+        "users": []
     },
     {
         "name": "The Hobbit",
@@ -78,7 +94,9 @@
         "year": 1937,
         "genre": "Fantasy",
         "slugName": "the-hobbit",
-        "slugAuthor": "j-r-r-tolkien"
+        "slugAuthor": "j-r-r-tolkien",
+        "isbn": "9780345534835",
+        "users": []
     },
     {
         "name": "Moby Dick",
@@ -87,7 +105,9 @@
         "year": 1851,
         "genre": "Adventure",
         "slugName": "moby-dick",
-        "slugAuthor": "herman-melville"
+        "slugAuthor": "herman-melville",
+        "isbn": "9780142437247",
+        "users": []
     },
     {
         "name": "The Lord of the Rings",
@@ -96,7 +116,9 @@
         "year": 1954,
         "genre": "Fantasy",
         "slugName": "the-lord-of-the-rings",
-        "slugAuthor": "j-r-r-tolkien"
+        "slugAuthor": "j-r-r-tolkien",
+        "isbn": "9780618640157",
+        "users": []
     },
     {
         "name": "Jane Eyre",
@@ -105,7 +127,9 @@
         "year": 1847,
         "genre": "Gothic Fiction",
         "slugName": "jane-eyre",
-        "slugAuthor": "charlotte-bronte"
+        "slugAuthor": "charlotte-bronte",
+        "isbn": "9780142437209",
+        "users": []
     },
     {
         "name": "The Chronicles of Narnia",
@@ -114,7 +138,9 @@
         "year": 1950,
         "genre": "Fantasy",
         "slugName": "the-chronicles-of-narnia",
-        "slugAuthor": "c-s-lewis"
+        "slugAuthor": "c-s-lewis",
+        "isbn": "9780066238500",
+        "users": []
     },
     {
         "name": "Alice's Adventures in Wonderland",
@@ -123,7 +149,9 @@
         "year": 1865,
         "genre": "Fantasy",
         "slugName": "alices-adventures-in-wonderland",
-        "slugAuthor": "lewis-carroll"
+        "slugAuthor": "lewis-carroll",
+        "isbn": "9780141439761",
+        "users": []
     },
     {
         "name": "The Picture of Dorian Gray",
@@ -132,7 +160,9 @@
         "year": 1890,
         "genre": "Gothic Fiction",
         "slugName": "the-picture-of-dorian-gray",
-        "slugAuthor": "oscar-wilde"
+        "slugAuthor": "oscar-wilde",
+        "isbn": "9780141439570",
+        "users": []
     },
     {
         "name": "The Bell Jar",
@@ -141,7 +171,9 @@
         "year": 1963,
         "genre": "Semi-Autobiographical Fiction",
         "slugName": "the-bell-jar",
-        "slugAuthor": "sylvia-plath"
+        "slugAuthor": "sylvia-plath",
+        "isbn": "9780061148514",
+        "users": []
     },
     {
         "name": "Lord of the Flies",
@@ -150,7 +182,9 @@
         "year": 1954,
         "genre": "Allegorical Novel",
         "slugName": "lord-of-the-flies",
-        "slugAuthor": "william-golding"
+        "slugAuthor": "william-golding",
+        "isbn": "9780399501487",
+        "users": []
     },
     {
         "name": "Wuthering Heights",
@@ -159,7 +193,9 @@
         "year": 1847,
         "genre": "Gothic Fiction",
         "slugName": "wuthering-heights",
-        "slugAuthor": "emily-bronte"
+        "slugAuthor": "emily-bronte",
+        "isbn": "9780141439556",
+        "users": []
     },
     {
         "name": "Animal Farm",
@@ -168,7 +204,9 @@
         "year": 1945,
         "genre": "Satire",
         "slugName": "animal-farm",
-        "slugAuthor": "george-orwell"
+        "slugAuthor": "george-orwell",
+        "isbn": "9780451526342",
+        "users": []
     },
     {
         "name": "Gone with the Wind",
@@ -177,7 +215,9 @@
         "year": 1936,
         "genre": "Historical Fiction",
         "slugName": "gone-with-the-wind",
-        "slugAuthor": "margaret-mitchell"
+        "slugAuthor": "margaret-mitchell",
+        "isbn": "9781416548898",
+        "users": []
     },
     {
         "name": "Les Misérables",
@@ -186,7 +226,9 @@
         "year": 1862,
         "genre": "Historical Fiction",
         "slugName": "les-miserables",
-        "slugAuthor": "victor-hugo"
+        "slugAuthor": "victor-hugo",
+        "isbn": "9780140444308",
+        "users": []
     },
     {
         "name": "The Grapes of Wrath",
@@ -195,7 +237,9 @@
         "year": 1939,
         "genre": "Realism",
         "slugName": "the-grapes-of-wrath",
-        "slugAuthor": "john-steinbeck"
+        "slugAuthor": "john-steinbeck",
+        "isbn": "9780143039433",
+        "users": []
     },
     {
         "name": "Anna Karenina",
@@ -204,7 +248,9 @@
         "year": 1877,
         "genre": "Realism",
         "slugName": "anna-karenina",
-        "slugAuthor": "leo-tolstoy"
+        "slugAuthor": "leo-tolstoy",
+        "isbn": "9780143035008",
+        "users": []
     },
     {
         "name": "The Adventures of Huckleberry Finn",
@@ -213,7 +259,9 @@
         "year": 1884,
         "genre": "Adventure",
         "slugName": "the-adventures-of-huckleberry-finn",
-        "slugAuthor": "mark-twain"
+        "slugAuthor": "mark-twain",
+        "isbn": "9780143107323",
+        "users": []
     },
     {
         "name": "War and Peace",
@@ -222,7 +270,9 @@
         "year": 1869,
         "genre": "Historical Fiction",
         "slugName": "war-and-peace",
-        "slugAuthor": "leo-tolstoy"
+        "slugAuthor": "leo-tolstoy",
+        "isbn": "9781400079988",
+        "users": []
     },
     {
         "name": "Crime and Punishment",
@@ -231,7 +281,9 @@
         "year": 1866,
         "genre": "Philosophical Novel",
         "slugName": "crime-and-punishment",
-        "slugAuthor": "fyodor-dostoevsky"
+        "slugAuthor": "fyodor-dostoevsky",
+        "isbn": "9780140449136",
+        "users": []
     },
     {
         "name": "The Brothers Karamazov",
@@ -240,7 +292,9 @@
         "year": 1880,
         "genre": "Philosophical Novel",
         "slugName": "the-brothers-karamazov",
-        "slugAuthor": "fyodor-dostoevsky"
+        "slugAuthor": "fyodor-dostoevsky",
+        "isbn": "9780140449242",
+        "users": []
     },
     {
         "name": "One Hundred Years of Solitude",
@@ -249,7 +303,9 @@
         "year": 1967,
         "genre": "Magical Realism",
         "slugName": "one-hundred-years-of-solitude",
-        "slugAuthor": "gabriel-garcia-marquez"
+        "slugAuthor": "gabriel-garcia-marquez",
+        "isbn": "9780060883287",
+        "users": []
     },
     {
         "name": "The Old Man and the Sea",
@@ -258,7 +314,9 @@
         "year": 1952,
         "genre": "Adventure",
         "slugName": "the-old-man-and-the-sea",
-        "slugAuthor": "ernest-hemingway"
+        "slugAuthor": "ernest-hemingway",
+        "isbn": "9780684801223",
+        "users": []
     },
     {
         "name": "The Scarlet Letter",
@@ -267,7 +325,9 @@
         "year": 1850,
         "genre": "Romance",
         "slugName": "the-scarlet-letter",
-        "slugAuthor": "nathaniel-hawthorne"
+        "slugAuthor": "nathaniel-hawthorne",
+        "isbn": "9780142437261",
+        "users": []
     },
     {
         "name": "Frankenstein",
@@ -276,7 +336,9 @@
         "year": 1818,
         "genre": "Gothic Fiction",
         "slugName": "frankenstein",
-        "slugAuthor": "mary-shelley"
+        "slugAuthor": "mary-shelley",
+        "isbn": "9780141439471",
+        "users": []
     },
     {
         "name": "The Road",
@@ -285,7 +347,9 @@
         "year": 2006,
         "genre": "Post-apocalyptic Fiction",
         "slugName": "the-road",
-        "slugAuthor": "cormac-mccarthy"
+        "slugAuthor": "cormac-mccarthy",
+        "isbn": "9780307387899",
+        "users": []
     },
     {
         "name": "The Handmaid's Tale",
@@ -294,7 +358,9 @@
         "year": 1985,
         "genre": "Dystopian Fiction",
         "slugName": "the-handmaids-tale",
-        "slugAuthor": "margaret-atwood"
+        "slugAuthor": "margaret-atwood",
+        "isbn": "9780385490818",
+        "users": []
     },
     {
         "name": "Beloved",
@@ -303,7 +369,9 @@
         "year": 1987,
         "genre": "Magical Realism",
         "slugName": "beloved",
-        "slugAuthor": "toni-morrison"
+        "slugAuthor": "toni-morrison",
+        "isbn": "9781400033416",
+        "users": []
     },
     {
         "name": "The Hitchhiker's Guide to the Galaxy",
@@ -312,7 +380,9 @@
         "year": 1979,
         "genre": "Science Fiction",
         "slugName": "the-hitchhikers-guide-to-the-galaxy",
-        "slugAuthor": "douglas-adams"
+        "slugAuthor": "douglas-adams",
+        "isbn": "9780345391803",
+        "users": []
     },
     {
         "name": "Heart of Darkness",
@@ -321,7 +391,9 @@
         "year": 1899,
         "genre": "Adventure",
         "slugName": "heart-of-darkness",
-        "slugAuthor": "joseph-conrad"
+        "slugAuthor": "joseph-conrad",
+        "isbn": "9781503290912",
+        "users": []
     },
     {
         "name": "The Shining",
@@ -330,7 +402,9 @@
         "year": 1977,
         "genre": "Horror",
         "slugName": "the-shining",
-        "slugAuthor": "stephen-king"
+        "slugAuthor": "stephen-king",
+        "isbn": "9780307743657",
+        "users": []
     },
     {
         "name": "Slaughterhouse-Five",
@@ -339,7 +413,9 @@
         "year": 1969,
         "genre": "Science Fiction",
         "slugName": "slaughterhouse-five",
-        "slugAuthor": "kurt-vonnegut"
+        "slugAuthor": "kurt-vonnegut",
+        "isbn": "9780440180296",
+        "users": []
     },
     {
         "name": "Catch-22",
@@ -348,7 +424,9 @@
         "year": 1961,
         "genre": "Satire",
         "slugName": "catch-22",
-        "slugAuthor": "joseph-heller"
+        "slugAuthor": "joseph-heller",
+        "isbn": "9780684833391",
+        "users": []
     },
     {
         "name": "The Color Purple",
@@ -357,7 +435,9 @@
         "year": 1982,
         "genre": "Epistolary Novel",
         "slugName": "the-color-purple",
-        "slugAuthor": "alice-walker"
+        "slugAuthor": "alice-walker",
+        "isbn": "9780156031820",
+        "users": []
     },
     {
         "name": "Maus",
@@ -366,7 +446,9 @@
         "year": 1986,
         "genre": "Graphic Novel",
         "slugName": "maus",
-        "slugAuthor": "art-spiegelman"
+        "slugAuthor": "art-spiegelman",
+        "isbn": "9780394747231",
+        "users": []
     },
     {
         "name": "Persepolis",
@@ -375,16 +457,9 @@
         "year": 2000,
         "genre": "Graphic Novel",
         "slugName": "persepolis",
-        "slugAuthor": "marjane-satrapi"
-    },
-    {
-        "name": "The Handmaid's Tale",
-        "author": "Margaret Atwood",
-        "pages": 311,
-        "year": 1985,
-        "genre": "Dystopian Fiction",
-        "slugName": "the-handmaids-tale",
-        "slugAuthor": "margaret-atwood"
+        "slugAuthor": "marjane-satrapi",
+        "isbn": "9780375714573",
+        "users": []
     },
     {
         "name": "American Gods",
@@ -393,7 +468,9 @@
         "year": 2001,
         "genre": "Fantasy",
         "slugName": "american-gods",
-        "slugAuthor": "neil-gaiman"
+        "slugAuthor": "neil-gaiman",
+        "isbn": "9780060558123",
+        "users": []
     },
     {
         "name": "The Secret History",
@@ -402,7 +479,9 @@
         "year": 1992,
         "genre": "Mystery",
         "slugName": "the-secret-history",
-        "slugAuthor": "donna-tartt"
+        "slugAuthor": "donna-tartt",
+        "isbn": "9780140167771",
+        "users": []
     },
     {
         "name": "The Girl with the Dragon Tattoo",
@@ -411,7 +490,9 @@
         "year": 2005,
         "genre": "Mystery",
         "slugName": "the-girl-with-the-dragon-tattoo",
-        "slugAuthor": "stieg-larsson"
+        "slugAuthor": "stieg-larsson",
+        "isbn": "9780307269751",
+        "users": []
     },
     {
         "name": "A Game of Thrones",
@@ -420,7 +501,9 @@
         "year": 1996,
         "genre": "Fantasy",
         "slugName": "a-game-of-thrones",
-        "slugAuthor": "george-r-r-martin"
+        "slugAuthor": "george-r-r-martin",
+        "isbn": "9780553381689",
+        "users": []
     },
     {
         "name": "The Hunger Games",
@@ -429,7 +512,9 @@
         "year": 2008,
         "genre": "Dystopian Fiction",
         "slugName": "the-hunger-games",
-        "slugAuthor": "suzanne-collins"
+        "slugAuthor": "suzanne-collins",
+        "isbn": "9780439023528",
+        "users": []
     },
     {
         "name": "The Da Vinci Code",
@@ -438,6 +523,8 @@
         "year": 2003,
         "genre": "Mystery",
         "slugName": "the-da-vinci-code",
-        "slugAuthor": "dan-brown"
+        "slugAuthor": "dan-brown",
+        "isbn": "9780307474278",
+        "users": []
     }
 ]

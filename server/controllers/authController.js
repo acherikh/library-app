@@ -20,7 +20,7 @@ exports.protect = catchAsyncError(async (req, res, next) => {
         token = req.cookies.jwt;
     }
 
-    if (!token) {
+    if (!token || token === 'loggedout') {
         return next(
             new AppError(
                 'You are not logged in! Please log in to get access.',
@@ -28,7 +28,6 @@ exports.protect = catchAsyncError(async (req, res, next) => {
             )
         );
     }
-
     // 2) Verification token
     const decoded = await promisify(jwt.verify)(
         token,
@@ -182,7 +181,7 @@ exports.isLoggedIn = async (req, res, next) => {
 
 exports.logout = (req, res) => {
     if (process.env.NODE_ENV !== 'local') {
-        res.cookie('jwt', token, {
+        res.cookie('jwt', 'loggedout', {
             sameSite: 'None',
             maxAge: 1000 * 60 * 60,
             httpOnly: true,
@@ -191,7 +190,7 @@ exports.logout = (req, res) => {
                 req.headers['x-forwarded-proto'] === 'https',
         });
     } else {
-        res.cookie('jwt', token, {
+        res.cookie('jwt', 'loggedout', {
             sameSite: 'Strict',
             maxAge: 1000 * 60 * 60,
             httpOnly: true,

@@ -1,0 +1,64 @@
+.library-page {
+    background-color: lightgray;
+    position: absolute;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100%;
+}
+
+.library-page .books-container {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.library-page .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 4%;
+}
+
+.library-page .pagination button {
+    background-color: white;
+    color: black;
+
+    margin-top: 7px;
+    padding: 5px 20px;
+
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.library-page .pagination button:hover {
+    opacity: 0.8;
+}
+
+.library-page .pagination button:active {
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) {
+    .library-page .books-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .library-page .books-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

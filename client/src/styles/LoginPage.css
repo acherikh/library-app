@@ -46,6 +46,12 @@
     padding: 3%;
 }
 
+.signin-page .error-message {
+    margin-left: 2%;
+    margin-bottom: 3%;
+    color: red;
+}
+
 .signin-page .forgot-password {
     margin-left: 2%;
     margin-bottom: 10%;
