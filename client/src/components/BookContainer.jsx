@@ -1,9 +1,8 @@
 import React from 'react';
 
 import './BookContainer.css';
-import bookPlaceholder from '../img/book-cover-placeholder.png';
 
-const BookContainer = ({ book, onAction, actionText }) => {
+const BookContainer = ({ book, coverUrl, onAction, actionText }) => {
     const handleAction = () => {
         onAction(book._id);
     };
@@ -11,7 +10,11 @@ const BookContainer = ({ book, onAction, actionText }) => {
     return (
         <div className='book-box'>
             <div className='book-thumbnail'>
-                <img src={bookPlaceholder} alt='Book Thumbnail' />
+                <img
+                    className='book-cover'
+                    src={coverUrl}
+                    alt='Book Thumbnail'
+                />
             </div>
             <div className='book-infos'>
                 <div className='book-title'>

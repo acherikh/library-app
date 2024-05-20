@@ -6,11 +6,7 @@ import profilePicture from '../img/profile_pic.jpg';
 
 import './Header.css';
 
-const Header = ({
-    handlePreviousPage,
-    handleNextPage,
-    handleDrawer,
-}) => {
+const Header = ({ handleDrawer }) => {
     const navigate = useNavigate();
     return (
         <header className='library-header'>
@@ -19,8 +15,17 @@ const Header = ({
                 src={bookPlaceholder}
                 onClick={() => navigate('/library')}
             />
-            <button onClick={handlePreviousPage}>Previous</button>
-            <button onClick={handleNextPage}>Next</button>
+            <div className='search-container'>
+                <input
+                    type='text'
+                    id='searchInput'
+                    placeholder='Search book...'
+                />
+                <button id='searchButton'>
+                    <img src='https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png' />
+                </button>
+            </div>
+
             <img
                 className='profile-picture'
                 src={profilePicture}

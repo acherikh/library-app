@@ -146,6 +146,7 @@ const MyBooksPage = () => {
                 {myBooks.map((book) => (
                     <BookContainer
                         book={book}
+                        coverUrl={`https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`}
                         onAction={handleRemoveFromLibrary}
                         actionText={'Remove from my library'}
                         key={book._id}

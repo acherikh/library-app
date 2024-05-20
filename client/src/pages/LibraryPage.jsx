@@ -10,7 +10,7 @@ import BookContainer from '../components/BookContainer';
 function LibraryPage() {
     const [totalCount, setTotalCount] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(12);
+    const [itemsPerPage, setItemsPerPage] = useState(50);
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const handleDrawer = () => {
@@ -107,20 +107,6 @@ function LibraryPage() {
         }
     };
 
-    const handleAddToLibrary = async (id) => {
-        try {
-            await fetch(`${URL}/api/library/${id}`, {
-                method: 'PATCH',
-                credentials: 'include',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            });
-        } catch (err) {
-            setNoError(false);
-        }
-    };
-
     useEffect(() => {
         function handleEscapeKey(event) {
             if (event.code === 'Escape') {
@@ -132,6 +118,26 @@ function LibraryPage() {
         return () =>
             document.removeEventListener('keydown', handleEscapeKey);
     }, []);
+
+    const [libraryStatus, setLibraryStatus] = useState({}); // Key: book._id, Value : Boolean
+
+    const handleAddToLibrary = async (id) => {
+        try {
+            await fetch(`${URL}/api/library/${id}`, {
+                method: 'PATCH',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            setLibraryStatus((prevStatus) => ({
+                ...prevStatus,
+                [id]: true,
+            }));
+        } catch (err) {
+            console.error('Error adding to library:', err);
+        }
+    };
 
     return (
         <div className='library-page'>
@@ -145,6 +151,7 @@ function LibraryPage() {
                 {librarypage.map((book) => (
                     <BookContainer
                         book={book}
+                        coverUrl={`https://covers.openlibrary.org/b/isbn/${book.isbn}-M.jpg`}
                         onAction={handleAddToLibrary}
                         actionText={'Add to my library'}
                         key={book._id}
